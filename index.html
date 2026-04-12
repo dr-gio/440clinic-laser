@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depilación Láser Barranquilla | 440 Clinic · Dr. Gio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#26364D;--azul2:#536E83;--rosa:#C9938A;--rosa2:#EDD5D1;--rosa3:#FAF3F2;--blanco:#FFFFFF;--fondo:#F4F6F8;--fondo2:#DDE6ED;--negro:#07090E;--wa:#25D366}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#DDE6ED;color:var(--azul);overflow-x:hidden}
+
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:1.8rem;right:1.8rem;z-index:8000;display:flex;align-items:center;gap:.7rem;background:var(--wa);padding:.9rem 1.6rem .9rem 1.1rem;border-radius:60px;text-decoration:none;color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 8px 32px rgba(37,211,102,.45);animation:wap 2.5s ease-in-out infinite;transition:transform .2s}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+@keyframes wap{0%,100%{box-shadow:0 8px 32px rgba(37,211,102,.45)}50%{box-shadow:0 8px 52px rgba(37,211,102,.75)}}
+
+/* URGENCY BAR */
+.ubar{position:fixed;top:0;left:0;right:0;z-index:7000;background:var(--rosa);padding:.45rem 1rem;display:flex;align-items:center;justify-content:center;gap:.8rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;flex-wrap:wrap}
+.ubar .dot{width:6px;height:6px;border-radius:50%;background:#fff;animation:bl 1.2s infinite;flex-shrink:0}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.2}}
+#cd{font-weight:700;letter-spacing:.14em}
+
+/* NAV */
+nav{position:fixed;top:2rem;left:0;right:0;z-index:6000;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;transition:padding .3s;background:rgba(221,230,237,.96);backdrop-filter:blur(16px);border-bottom:1px solid #C8DBE6;box-shadow:0 2px 20px rgba(38,54,77,.08)}
+.nlogo{display:inline-flex;align-items:center;text-decoration:none;transition:opacity .2s}
+.nlogo:hover{opacity:.8}
+.nlogo svg{height:68px;width:auto;min-width:260px}
+.nwa{display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;padding:.6rem 1.3rem;border-radius:40px;font-size:.76rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
+.nwa:hover{opacity:.85}
+.nwa svg{width:16px;height:16px;fill:#fff}
+
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:8rem 3rem 6rem;overflow:hidden}
+.hvid{position:absolute;inset:0;z-index:0}
+.hvid video{width:100%;height:100%;object-fit:cover;object-position:center top}
+.hfallback{position:absolute;inset:0;background:linear-gradient(135deg,#7A9BB5 0%,#536E83 100%)}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.3}
+.b1{width:700px;height:700px;background:#9CB2BF;top:-150px;right:-200px;animation:bf 9s ease-in-out infinite}
+.b2{width:500px;height:500px;background:#C9938A;bottom:-100px;left:10%;animation:bf 7s ease-in-out 2s infinite}
+.b3{width:350px;height:350px;background:#7A9BB5;top:30%;left:-80px;animation:bf 11s ease-in-out 4s infinite}
+@keyframes bf{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-40px) scale(1.08)}}
+.hov-top{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(90,120,145,.4) 0%,rgba(90,120,145,.05) 35%,rgba(83,110,131,.3) 75%,rgba(244,246,248,1) 100%)}
+.hov-left{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(90,120,145,.5) 0%,rgba(90,120,145,.2) 50%,transparent 100%)}
+.scanline{position:absolute;inset:0;z-index:2;pointer-events:none;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(255,255,255,.018) 3px,rgba(255,255,255,.018) 4px)}
+.lbx{position:absolute;left:0;right:0;z-index:2;background:var(--fondo);height:52px}
+.lbx-t{top:0}.lbx-b{bottom:0}
+
+.hcontent{position:relative;z-index:3;max-width:820px}
+.hey{display:inline-flex;align-items:center;gap:.6rem;font-size:.7rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--rosa2);margin-bottom:1.5rem;opacity:0;animation:fu .8s ease .3s forwards}
+.hey::before{content:'';display:block;width:28px;height:1px;background:var(--rosa)}
+.hh1{font-family:'Playfair Display',serif;font-size:clamp(3.5rem,8vw,8rem);line-height:.92;text-transform:none;letter-spacing:-.02em;font-weight:700;opacity:0;animation:fu .9s ease .5s forwards}
+.hh1 .stroke{color:#fff;display:block;font-weight:700;opacity:.9}
+.hh1 .fill{color:#fff;display:block;font-weight:700}
+.hh1 .accent{color:var(--rosa2);display:block;font-style:italic;font-weight:600}
+.hsub{font-size:1.05rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.6);max-width:500px;margin:1.8rem 0 2.5rem;opacity:0;animation:fu .8s ease .8s forwards}
+.hsub strong{color:#fff;font-weight:600}
+.hctas{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;opacity:0;animation:fu .8s ease 1s forwards}
+
+.cwa{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:1.1rem 2.4rem;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 32px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.cwa::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
+.cwa:hover::before{left:100%}
+.cwa:hover{transform:translateY(-2px);box-shadow:0 12px 44px rgba(37,211,102,.6)}
+.cwa svg{width:20px;height:20px;fill:#fff;flex-shrink:0}
+.csec{color:rgba(255,255,255,.6);font-size:.85rem;font-weight:400;letter-spacing:.06em;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px;transition:color .2s,border-color .2s}
+.csec:hover{color:var(--terra2);border-color:var(--terra2)}
+
+.hproof{position:absolute;bottom:3.5rem;left:3rem;right:3rem;z-index:3;display:flex;align-items:center;gap:2.5rem;flex-wrap:wrap;opacity:0;animation:fu .8s ease 1.4s forwards;background:rgba(38,54,77,.3);padding:1rem 1.5rem;backdrop-filter:blur(8px)}
+.pdiv{width:1px;height:36px;background:rgba(255,255,255,.12);flex-shrink:0}
+.pnum{font-family:'Playfair Display',serif;font-size:2.2rem;line-height:1;letter-spacing:-.01em;font-weight:700}
+.plbl{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:.2rem}
+.scr{position:absolute;bottom:1.8rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:.4rem;opacity:0;animation:fi 1s ease 2.2s forwards}
+.scr span{font-size:.58rem;letter-spacing:.22em;color:rgba(255,255,255,.25);text-transform:uppercase}
+.scrl{width:1px;height:36px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent);animation:sd 1.6s ease-in-out infinite}
+@keyframes sd{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes fu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+
+/* SECTION SHARED */
+.slbl{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rosa);margin-bottom:1rem;display:flex;align-items:center;gap:.7rem}
+.slbl::before{content:'';display:block;width:24px;height:1px;background:var(--rosa)}
+.sh2{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4vw,4.2rem);line-height:1.05;text-transform:none;margin-bottom:1rem;color:var(--azul);font-weight:700;letter-spacing:-.02em}
+.sh2 em{color:var(--rosa);font-style:italic;font-weight:600}
+.sp{font-size:.92rem;font-weight:300;line-height:1.85;color:var(--azul2);max-width:520px}
+
+/* VERDAD */
+#verdad{padding:7rem 3rem;background:#EAF0F4;position:relative;overflow:hidden}
+#verdad::before{content:'SÍ';position:absolute;right:-1rem;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:clamp(8rem,18vw,22rem);color:rgba(38,54,77,.04);pointer-events:none;user-select:none;line-height:1}
+.v-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.v-left h2{font-family:'Playfair Display',serif;font-size:clamp(2.5rem,4.5vw,4.5rem);line-height:1.05;text-transform:none;margin-bottom:1.5rem;color:var(--azul);font-weight:700;letter-spacing:-.02em}
+.v-left h2 em{color:var(--rosa);font-style:normal;display:block}
+.v-left p{font-size:.95rem;font-weight:300;line-height:1.9;color:var(--azul2)}
+.v-cards{display:flex;flex-direction:column;gap:2px;background:rgba(38,54,77,.06)}
+.vcard{background:#fff;padding:2rem 2.2rem;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start;position:relative;overflow:hidden;transition:background .3s}
+.vcard::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--rosa);transform:scaleY(0);transform-origin:top;transition:transform .35s}
+.vcard:hover{background:#EAF0F4}
+.vcard:hover::before{transform:scaleY(1)}
+.vcard-num{font-family:'Playfair Display',serif;font-size:3rem;line-height:1;color:rgba(38,54,77,.08);transition:color .3s}
+.vcard:hover .vcard-num{color:rgba(201,147,138,.25)}
+.vcard-title{font-size:.92rem;font-weight:600;letter-spacing:.01em;color:var(--azul);margin-bottom:.5rem}
+.vcard-text{font-size:.82rem;font-weight:300;line-height:1.75;color:var(--azul2)}
+.vcard-tag{display:inline-block;margin-top:.7rem;font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rosa);border:1px solid rgba(201,147,138,.4);padding:.25rem .7rem}
+
+/* EQUIPO */
+#equipo{padding:7rem 3rem;background:linear-gradient(to bottom,#C8DBE6 0%,#DDE6ED 100%);position:relative;overflow:hidden}
+.eq-inner{max-width:1100px;margin:0 auto}
+.eq-top{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-bottom:4rem;align-items:end}
+.eq-vid{position:relative;aspect-ratio:16/9;background:var(--fondo2);border:1px solid rgba(38,54,77,.12);overflow:hidden;cursor:pointer}
+.eq-vid video{width:100%;height:100%;object-fit:cover}
+.eq-vid-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#1A2B3E,#26364D);display:flex;align-items:center;justify-content:center}
+.playbtn{width:68px;height:68px;border-radius:50%;background:rgba(162,123,90,.9);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
+.playbtn::after{content:'';border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:5px}
+.eq-vid:hover .playbtn{transform:scale(1.1);background:var(--terra)}
+.eq-vid-tag{position:absolute;top:1rem;left:1rem;background:var(--terra);font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;padding:.3rem .9rem}
+.specs{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(255,255,255,.05)}
+.spec{background:#fff;padding:2rem 1.6rem;position:relative;overflow:hidden;transition:background .3s}
+.spec::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--rosa);transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.spec:hover{background:#EAF0F4}
+.spec:hover::after{transform:scaleX(1)}
+.spec-val{font-family:'Playfair Display',serif;font-size:2.4rem;line-height:1;color:var(--rosa);letter-spacing:-.01em;margin-bottom:.3rem;font-weight:700}
+.spec-lbl{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--azul2)}
+.honest{margin-top:3rem;padding:2rem 2.5rem;border:1px solid rgba(201,147,138,.3);background:rgba(255,255,255,.6);display:flex;gap:1.5rem;align-items:flex-start}
+.honest-icon{font-size:1.5rem;flex-shrink:0;margin-top:.2rem}
+.honest-title{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--rosa);margin-bottom:.5rem}
+.honest-text{font-size:.85rem;font-weight:300;line-height:1.8;color:var(--azul2)}
+.honest-text strong{color:#fff;font-weight:500}
+
+/* ANTES/DESPUÉS */
+#resultados{padding:7rem 3rem;background:#EAF0F4}
+.res-inner{max-width:1100px;margin:0 auto}
+.res-top{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem}
+.ad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.ad-card{position:relative;overflow:hidden;aspect-ratio:3/4;background:#7A9BB5;cursor:pointer}
+.ad-before-half{position:absolute;inset:0;right:50%;background:linear-gradient(135deg,#EDD5D1 0%,#D4B8B3 100%);display:flex;align-items:flex-end;padding:1rem;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);transition:right .4s ease}
+.ad-after-half{position:absolute;inset:0;left:50%;background:linear-gradient(135deg,#26364D 0%,#536E83 100%);display:flex;align-items:flex-end;justify-content:flex-end;padding:1rem;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:left .4s ease}
+.ad-card:hover .ad-before-half{right:30%}
+.ad-card:hover .ad-after-half{left:70%}
+.ad-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(255,255,255,.5);transform:translateX(-50%);z-index:2;transition:left .4s ease}
+.ad-dot{position:absolute;top:50%;left:50%;z-index:3;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--azul);font-weight:700;box-shadow:0 2px 12px rgba(0,0,0,.4);transition:left .4s ease}
+.ad-card:hover .ad-line{left:70%}
+.ad-card:hover .ad-dot{left:70%}
+.ad-foot{position:absolute;bottom:0;left:0;right:0;z-index:4;background:linear-gradient(to top,rgba(221,230,237,.98),transparent);padding:2rem 1.2rem 1.2rem}
+.ad-zone{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:-.01em;color:var(--azul);font-weight:700}
+.ad-ses{font-size:.65rem;letter-spacing:.14em;color:var(--azul2);text-transform:uppercase;margin-top:.2rem}
+.ad-note{margin-top:1.5rem;font-size:.7rem;font-style:italic;color:rgba(255,255,255,.18);text-align:center}
+
+/* TESTIMONIOS */
+#testimonios{padding:7rem 3rem;background:#C8DBE6}
+.test-inner{max-width:1100px;margin:0 auto}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3rem}
+.tcard{position:relative;overflow:hidden;aspect-ratio:9/14;background:var(--azul);cursor:pointer}
+.tcard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tcard-bg{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E 0%,#26364D 100%)}
+.tcard-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,14,.95) 0%,rgba(7,9,14,.15) 55%,transparent 100%)}
+.tplay{position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;border:2px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,transform .2s}
+.tplay::after{content:'';border-left:17px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
+.tcard:hover .tplay{background:var(--terra);border-color:var(--terra);transform:translate(-50%,-50%) scale(1.1)}
+.tinfo{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1.5rem 1.2rem}
+.tname{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:-.01em;font-weight:700}
+.tzona{font-size:.65rem;letter-spacing:.14em;color:rgba(255,255,255,.35);text-transform:uppercase;margin-top:.2rem}
+.tstars{font-size:.72rem;color:var(--terra2);margin-top:.4rem}
+.tquote{font-size:.8rem;font-style:italic;font-weight:300;color:rgba(255,255,255,.6);line-height:1.6;margin-top:.5rem}
+
+/* EQUIPO */
+#equipo-humano{padding:7rem 3rem;background:linear-gradient(135deg,#DDE6ED 0%,#EAF0F4 100%);position:relative;overflow:hidden}
+#equipo-humano::before{content:'';position:absolute;right:-5rem;top:-5rem;width:500px;height:500px;border-radius:50%;border:1px solid rgba(83,110,131,.08);pointer-events:none}
+#equipo-humano::after{content:'';position:absolute;right:-3rem;top:-3rem;width:320px;height:320px;border-radius:50%;border:1px solid rgba(83,110,131,.06);pointer-events:none}
+.eq-h-inner{max-width:1100px;margin:0 auto}
+
+/* Sharon — protagonista */
+.sharon-wrap{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;margin-bottom:5rem}
+.sharon-photo{position:relative;aspect-ratio:3/4;overflow:hidden;background:#0D1520;border:1px solid rgba(255,255,255,.05)}
+.sharon-photo-inner{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E,#2A4060);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
+.ph-av{width:100px;height:100px;border-radius:50%;border:2px solid rgba(162,123,90,.3);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:2rem;color:rgba(162,123,90,.45)}
+.ph-name-ph{font-family:'Playfair Display',serif;font-size:1.2rem;letter-spacing:.1em;color:rgba(255,255,255,.2)}
+.sharon-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+.sharon-bar{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(13,24,37,.98) 60%,transparent);padding:2.5rem 1.5rem 1.5rem}
+.sharon-bar-name{font-family:'Playfair Display',serif;font-size:1.8rem;letter-spacing:-.01em;font-weight:700}
+.sharon-bar-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa2);margin-top:.2rem}
+.sharon-badge{display:inline-block;margin-top:.5rem;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;background:var(--rosa);color:#fff;padding:.25rem .8rem}
+.sharon-content{position:relative;z-index:1}
+.sharon-quote{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,3rem);line-height:1.15;text-transform:none;margin-bottom:1.5rem;color:var(--azul);font-weight:700;letter-spacing:-.01em}
+.sharon-quote em{color:var(--rosa);font-style:italic;font-weight:600}
+.sharon-p{font-size:.9rem;font-weight:300;line-height:1.9;color:var(--azul2);margin-bottom:1rem}
+.sharon-feats{display:flex;flex-direction:column;gap:.6rem;margin:1.5rem 0 2rem}
+.sharon-feat{display:flex;align-items:center;gap:.8rem;font-size:.82rem;font-weight:300;color:var(--azul)}
+.sfmark{width:18px;height:18px;flex-shrink:0;border:1px solid var(--rosa);display:flex;align-items:center;justify-content:center;font-size:.58rem;color:var(--rosa)}
+
+/* Divisor */
+.team-divider{display:flex;align-items:center;gap:1.5rem;margin-bottom:4rem;opacity:.5}
+.tdiv-line{flex:1;height:1px;background:rgba(38,54,77,.15)}
+.tdiv-text{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--azul2);white-space:nowrap}
+
+/* Esteticistas grid */
+.estet-header{margin-bottom:2.5rem}
+.estet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:3rem}
+.estet-card{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--azul);cursor:default}
+.estet-photo{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E,#26364D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem}
+.estet-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+.estet-av{width:70px;height:70px;border-radius:50%;border:1.5px solid rgba(162,123,90,.3);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.5rem;color:rgba(162,123,90,.4)}
+.estet-ph{font-family:'Playfair Display',serif;font-size:.9rem;letter-spacing:.1em;color:rgba(255,255,255,.15)}
+.estet-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,14,.95) 0%,rgba(7,9,14,.1) 55%,transparent 100%)}
+.estet-hover{position:absolute;inset:0;background:rgba(201,147,138,.12);opacity:0;transition:opacity .3s}
+.estet-card:hover .estet-hover{opacity:1}
+.estet-info{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1.5rem 1.2rem}
+.estet-name{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:-.01em;font-weight:700;color:#fff}
+.estet-rol{font-size:.65rem;letter-spacing:.14em;color:var(--rosa);text-transform:uppercase;margin-top:.25rem}
+.estet-desc{font-size:.75rem;font-weight:300;color:rgba(38,54,77,.6);line-height:1.55;margin-top:.4rem}
+
+/* Dr Gio — aval */
+.drgio-aval{display:grid;grid-template-columns:auto 1fr;gap:2.5rem;align-items:center;background:rgba(255,255,255,.7);border:1px solid rgba(38,54,77,.1);padding:2.5rem;border-left:3px solid var(--rosa)}
+.drgio-aval-photo{position:relative;width:120px;height:120px;flex-shrink:0;overflow:hidden;border-radius:50%;border:2px solid rgba(201,147,138,.4)}
+.drgio-aval-photo-inner{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E,#26364D);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.6rem;color:rgba(162,123,90,.4)}
+.drgio-aval-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+.drgio-aval-content{}
+.drgio-aval-name{font-family:'Playfair Display',serif;font-size:1.5rem;letter-spacing:-.01em;margin-bottom:.2rem;color:var(--azul);font-weight:700}
+.drgio-aval-title{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rosa);margin-bottom:.8rem}
+.drgio-aval-text{font-size:.85rem;font-weight:300;line-height:1.8;color:var(--azul2)}
+
+/* responsive equipo */
+@media(max-width:900px){
+  #equipo-humano{padding:5rem 1.5rem}
+  .sharon-wrap{grid-template-columns:1fr;gap:3rem}
+  .estet-grid{grid-template-columns:1fr}
+  .drgio-aval{grid-template-columns:1fr;text-align:center}
+  .drgio-aval-photo{margin:0 auto}
+}
+
+/* mantener estilos previos necesarios */
+.certs{display:flex;flex-direction:column;gap:.7rem;margin:2rem 0}
+.cert{display:flex;align-items:center;gap:.8rem;font-size:.82rem;font-weight:300;color:var(--azul)}
+.cmark{width:18px;height:18px;flex-shrink:0;border:1px solid var(--rosa);display:flex;align-items:center;justify-content:center;font-size:.58rem;color:var(--rosa)}
+
+/* CTA FINAL */
+#cta-final{position:relative;overflow:hidden;min-height:70vh;display:flex;align-items:center;justify-content:center;padding:7rem 3rem;text-align:center}
+.ctaf-vid{position:absolute;inset:0;z-index:0}
+.ctaf-vid video{width:100%;height:100%;object-fit:cover}
+.ctaf-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#0D1520 0%,#26364D 100%)}
+.ctaf-blob{position:absolute;border-radius:50%;filter:blur(100px);opacity:.25}
+.ctaf-blob1{width:600px;height:600px;background:#7A9BB5;top:-150px;left:-100px}
+.ctaf-blob2{width:500px;height:500px;background:#A27B5A;bottom:-100px;right:-100px}
+.ctaf-ov{position:absolute;inset:0;z-index:1;background:rgba(38,54,77,.55)}
+.ctaf-content{position:relative;z-index:2;max-width:700px}
+.ctaf-eyebrow{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rosa2);margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:.8rem}
+.ctaf-eyebrow::before,.ctaf-eyebrow::after{content:'';display:block;width:20px;height:1px;background:var(--rosa)}
+.ctaf-h2{font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,6rem);line-height:1.05;text-transform:none;letter-spacing:-.02em;margin-bottom:1.5rem;color:#fff;font-weight:700}
+.ctaf-h2 em{color:var(--rosa2);font-style:italic;display:block;font-weight:600}
+.ctaf-sub{font-size:1rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 3rem}
+.ctaf-cta{display:inline-flex;align-items:center;gap:.8rem;background:var(--wa);color:#fff;padding:1.3rem 3rem;font-size:1rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 40px rgba(37,211,102,.5);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.ctaf-cta::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
+.ctaf-cta:hover::before{left:100%}
+.ctaf-cta:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(37,211,102,.65)}
+.ctaf-cta svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
+.ctaf-micro{margin-top:1.2rem;font-size:.72rem;color:rgba(255,255,255,.6);letter-spacing:.06em}
+
+/* CONTACTO */
+#contacto{padding:5rem 3rem;background:#EAF0F4;border-top:1px solid #C8DBE6}
+.contact-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.crows{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
+.crow{display:flex;align-items:flex-start;gap:1rem;font-size:.88rem;font-weight:300;color:var(--azul2)}
+.cico{width:36px;height:36px;flex-shrink:0;border:1px solid rgba(201,147,138,.4);display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.cwa-block{margin-top:2.5rem;background:rgba(255,255,255,.7);border:1px solid rgba(37,211,102,.25);border-left:3px solid var(--wa);padding:2rem}
+.cwa-block h4{font-family:'Playfair Display',serif;font-size:1.6rem;letter-spacing:-.01em;margin-bottom:.5rem;color:var(--azul);font-weight:700}
+.cwa-block p{font-size:.82rem;font-weight:300;line-height:1.8;color:var(--azul2);margin-bottom:1.5rem}
+.cwa-btn{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:.9rem 2rem;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
+.cwa-btn:hover{opacity:.85}
+.cwa-btn svg{width:18px;height:18px;fill:#fff}
+.faq{display:flex;flex-direction:column;gap:2px}
+.faq-title{font-family:'Playfair Display',serif;font-size:2rem;letter-spacing:-.01em;margin-bottom:1.5rem;color:var(--azul);font-weight:700}
+.faq-title em{color:var(--rosa);font-style:italic}
+.fi{background:rgba(255,255,255,.8);border:0.5px solid #C8DBE6}
+.fi summary{padding:1.2rem 1.5rem;cursor:pointer;font-size:.88rem;font-weight:500;color:var(--azul);list-style:none;display:flex;justify-content:space-between;align-items:center;transition:color .2s}
+.fi summary:hover{color:var(--rosa)}
+.fi summary::-webkit-details-marker{display:none}
+.fi summary::after{content:'+';font-size:1.2rem;color:var(--rosa);flex-shrink:0;transition:transform .3s}
+.fi[open] summary::after{transform:rotate(45deg)}
+.fi p{padding:0 1.5rem 1.2rem;font-size:.83rem;font-weight:300;line-height:1.8;color:var(--azul2)}
+
+/* FOOTER */
+footer{background:var(--azul);padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(255,255,255,.04)}
+.flogo{font-family:'DM Sans',sans-serif;font-size:.9rem;letter-spacing:.22em;color:rgba(255,255,255,.85);font-weight:500;text-transform:uppercase}
+.flogo span{color:var(--rosa)}
+.ftag{font-size:.62rem;font-style:italic;color:rgba(255,255,255,.55);margin-top:.2rem}
+footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
+.flinks{display:flex;gap:2rem}
+.flinks a{font-size:.68rem;color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s}
+.flinks a:hover{color:var(--rosa2)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
+.reveal.on{opacity:1;transform:none}
+.r1{transition-delay:.1s}.r2{transition-delay:.2s}.r3{transition-delay:.3s}
+
+/* ══ RESPONSIVE MOBILE — Alta conversión ══ */
+@media(max-width:900px){
+
+  /* NAV */
+  nav{padding:.7rem 1.2rem;top:2rem}
+  .nlogo svg{height:52px;min-width:200px}
+  .nwa{padding:.5rem 1rem;font-size:.7rem}
+
+  /* HERO — limpio y directo */
+  #hero{padding:6.5rem 1.4rem 5rem}
+  .hh1{font-size:clamp(3.2rem,14vw,5rem);line-height:.9}
+  .hsub{font-size:.9rem;margin:1.2rem 0 2rem}
+  .hctas{flex-direction:column;gap:.8rem}
+  .cwa{justify-content:center;padding:1rem 1.5rem;font-size:.85rem}
+  .csec{text-align:center}
+  /* Stats: 2 columnas en mobile */
+  .hproof{
+    left:1.4rem;right:1.4rem;bottom:1.5rem;
+    display:grid;grid-template-columns:1fr 1fr;gap:.8rem
+  }
+  .pdiv{display:none}
+  .pnum{font-size:1.8rem}
+  .plbl{font-size:.6rem}
+
+  /* VERDAD — cards en columna simple, más compactas */
+  #verdad{padding:4rem 1.4rem}
+  #verdad::before{display:none}
+  .v-inner{grid-template-columns:1fr;gap:2.5rem}
+  .v-left h2{font-size:2.8rem}
+  .v-cards{gap:1px}
+  .vcard{padding:1.5rem 1.2rem;grid-template-columns:auto 1fr;gap:1rem}
+  .vcard-num{font-size:2rem}
+  .vcard-text{font-size:.8rem}
+
+  /* EQUIPO REMOVALL — ocultar specs técnicas en mobile (no convierten) */
+  #equipo{padding:4rem 1.4rem}
+  .eq-top{grid-template-columns:1fr;gap:2rem}
+  .specs{display:none}
+  /* Honest badge — más compacto */
+  .honest{flex-direction:column;gap:1rem;padding:1.5rem}
+
+  /* RESULTADOS — solo 2 cards en mobile */
+  #resultados{padding:4rem 1.4rem}
+  .res-top{flex-direction:column;gap:1rem}
+  .ad-grid{grid-template-columns:1fr;gap:1px}
+  /* Ocultar 3er card en mobile */
+  .ad-grid .ad-card:nth-child(3){display:none}
+
+  /* TESTIMONIOS — 1 columna, solo 2 */
+  #testimonios{padding:4rem 1.4rem}
+  .tgrid{grid-template-columns:1fr;gap:1px}
+  .tcard{aspect-ratio:9/10}
+  .tcard:nth-child(3){display:none}
+
+  /* EQUIPO HUMANO */
+  #equipo-humano{padding:4rem 1.4rem}
+  #equipo-humano::before,#equipo-humano::after{display:none}
+  .sharon-wrap{grid-template-columns:1fr;gap:2rem}
+  .sharon-photo{aspect-ratio:4/3}
+  .sharon-quote{font-size:1.8rem}
+  .estet-grid{grid-template-columns:1fr 1fr;gap:1px}
+  /* Solo 2 esteticistas visibles en mobile */
+  .estet-card:nth-child(3){display:none}
+  .estet-card{aspect-ratio:3/4}
+  .drgio-aval{grid-template-columns:1fr;text-align:center;gap:1.5rem;padding:1.5rem}
+  .drgio-aval-photo{margin:0 auto}
+
+  /* CTA FINAL — protagonismo total */
+  #cta-final{padding:5rem 1.4rem;min-height:60vh}
+  .ctaf-h2{font-size:clamp(2.8rem,10vw,4.5rem)}
+  .ctaf-sub{font-size:.88rem}
+  .ctaf-cta{padding:1.1rem 2rem;font-size:.88rem;width:100%;justify-content:center}
+  .ctaf-eyebrow{font-size:.6rem}
+
+  /* CONTACTO — columna única */
+  #contacto{padding:4rem 1.4rem}
+  .contact-in{grid-template-columns:1fr;gap:3rem}
+
+  /* FOOTER */
+  footer{padding:2rem 1.4rem;flex-direction:column;align-items:center;text-align:center;gap:.8rem}
+  .flinks{justify-content:center;flex-wrap:wrap;gap:1rem}
+}
+
+/* Tablet 600-900 */
+@media(min-width:600px) and (max-width:900px){
+  .ad-grid{grid-template-columns:1fr 1fr}
+  .ad-grid .ad-card:nth-child(3){display:block}
+  .estet-grid{grid-template-columns:repeat(3,1fr)}
+  .estet-card:nth-child(3){display:block}
+  .specs{display:grid;grid-template-columns:repeat(2,1fr)}
+  .hproof{display:flex;gap:1.5rem}
+  .pdiv{display:block}
+}
+</style>
+</head>
+<body>
+
+<!-- WA FLOTANTE -->
+<a class="wa-float" href="https://wa.me/573025437767?text=Hola%20440%20Clinic!%20Quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20%F0%9F%8C%9F" target="_blank">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  Escríbenos ya
+</a>
+
+<!-- URGENCY BAR -->
+<div class="ubar">
+  <div class="dot"></div>
+  <span>Cupos limitados · Valoración gratuita disponible esta semana · Quedan</span>
+  <strong id="cd">--:--:--</strong>
+  <div class="dot"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nlogo" href="#hero">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 774.843 224.017" preserveAspectRatio="xMidYMid meet">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 695 59 L 774.84375 59 L 774.84375 158 L 695 158 Z M 695 59 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 588 205 L 603 205 L 603 224.015625 L 588 224.015625 Z M 588 205 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 485.464844 157.328125 L 491.789062 157.328125 L 491.789062 0 L 485.464844 0 Z M 485.464844 157.328125 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 526.675781 31.574219 C 525.464844 31.574219 524.4375 31.992188 523.601562 32.832031 C 522.761719 33.671875 522.339844 34.699219 522.339844 35.90625 C 522.339844 37.078125 522.761719 38.074219 523.601562 38.894531 C 524.4375 39.714844 525.464844 40.121094 526.675781 40.121094 C 527.882812 40.121094 528.917969 39.714844 529.777344 38.894531 C 530.636719 38.074219 531.066406 37.078125 531.066406 35.90625 C 531.066406 34.699219 530.636719 33.671875 529.777344 32.832031 C 528.917969 31.992188 527.882812 31.574219 526.675781 31.574219 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 523.492188 157.328125 L 529.816406 157.328125 L 529.816406 66.015625 L 523.492188 66.015625 Z M 523.492188 157.328125 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 670.078125 31.574219 C 668.867188 31.574219 667.84375 31.992188 667.003906 32.832031 C 666.164062 33.671875 665.746094 34.699219 665.746094 35.90625 C 665.746094 37.078125 666.164062 38.074219 667.003906 38.894531 C 667.84375 39.714844 668.867188 40.121094 670.078125 40.121094 C 671.289062 40.121094 672.324219 39.714844 673.183594 38.894531 C 674.039062 38.074219 674.46875 37.078125 674.46875 35.90625 C 674.46875 34.699219 674.039062 33.671875 673.183594 32.832031 C 672.324219 31.992188 671.289062 31.574219 670.078125 31.574219 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 666.898438 157.328125 L 673.222656 157.328125 L 673.222656 66.015625 L 666.898438 66.015625 Z M 666.898438 157.328125 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 602.53125 62.953125 C 596.273438 62.953125 589.996094 64.695312 583.707031 68.1875 C 577.414062 71.683594 572.125 76.226562 567.84375 81.828125 L 567.84375 78.367188 L 567.449219 66.015625 L 561.519531 66.015625 L 561.519531 157.328125 L 567.941406 157.328125 L 567.84375 89.238281 C 572.191406 82.980469 577.414062 78.039062 583.507812 74.414062 C 589.601562 70.792969 595.582031 68.980469 601.445312 68.980469 C 610.933594 68.980469 618.046875 71.730469 622.789062 77.230469 C 627.535156 82.734375 629.90625 91.378906 629.90625 103.171875 L 629.90625 157.328125 L 636.328125 157.328125 L 636.328125 103.273438 C 636.328125 89.4375 633.464844 79.257812 627.730469 72.734375 C 622 66.214844 613.601562 62.953125 602.53125 62.953125 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 745.097656 151.398438 C 737.191406 151.398438 729.960938 149.507812 723.40625 145.71875 C 716.847656 141.929688 711.675781 136.757812 707.890625 130.203125 C 704.101562 123.648438 702.207031 116.414062 702.207031 108.511719 C 702.207031 100.671875 704.101562 93.488281 707.890625 86.964844 C 711.675781 80.445312 716.847656 75.289062 723.40625 71.5 C 729.960938 67.710938 737.15625 65.816406 744.996094 65.816406 C 750.730469 65.816406 756.164062 66.824219 761.304688 68.832031 C 766.441406 70.84375 770.953125 73.660156 774.84375 77.28125 L 774.742188 70.066406 C 770.527344 66.773438 765.882812 64.238281 760.808594 62.457031 C 755.734375 60.679688 750.398438 59.789062 744.800781 59.789062 C 735.839844 59.789062 727.621094 61.949219 720.144531 66.261719 C 712.664062 70.578125 706.769531 76.476562 702.453125 83.953125 C 698.136719 91.429688 695.980469 99.648438 695.980469 108.609375 C 695.980469 117.570312 698.136719 125.773438 702.453125 133.214844 C 706.769531 140.660156 712.664062 146.542969 720.144531 150.855469 C 727.621094 155.171875 735.839844 157.328125 744.800781 157.328125 C 750.597656 157.328125 756.015625 156.441406 761.058594 154.660156 C 766.097656 152.882812 770.660156 150.378906 774.742188 147.152344 L 774.84375 139.835938 C 770.953125 143.527344 766.460938 146.375 761.355469 148.386719 C 756.246094 150.398438 750.828125 151.398438 745.097656 151.398438 "/>
+</g>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 76.703125 69.957031 L 70.9375 69.957031 L 70.9375 123.457031 L 8.074219 123.457031 L 77.433594 29.683594 L 69.746094 29.683594 L 0.113281 123.976562 L 0 124.1875 L 0 128.839844 L 70.9375 128.839844 L 70.9375 156.953125 L 76.703125 156.953125 L 76.703125 128.839844 L 96.535156 128.839844 L 96.535156 123.457031 L 76.703125 123.457031 Z M 76.703125 69.957031 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 180.835938 69.957031 L 175.070312 69.957031 L 175.070312 123.457031 L 112.210938 123.457031 L 181.566406 29.683594 L 173.878906 29.683594 L 104.246094 123.976562 L 104.132812 124.1875 L 104.132812 128.839844 L 175.070312 128.839844 L 175.070312 156.953125 L 180.835938 156.953125 L 180.835938 128.839844 L 200.671875 128.839844 L 200.671875 123.457031 L 180.835938 123.457031 Z M 180.835938 69.957031 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 371.460938 65.480469 C 381.527344 51.023438 398.253906 41.539062 417.164062 41.539062 C 432.125 41.539062 445.714844 47.480469 455.726562 57.117188 L 455.726562 49.53125 C 445.183594 40.984375 431.765625 35.847656 417.164062 35.847656 C 403.113281 35.847656 390.15625 40.609375 379.800781 48.585938 C 374.925781 52.34375 370.628906 56.816406 367.066406 61.84375 L 367.054688 61.84375 C 364.847656 65.066406 362.320312 68.023438 359.515625 70.683594 C 349.175781 80.484375 332.839844 80.484375 322.503906 70.683594 C 319.699219 68.023438 317.171875 65.066406 314.964844 61.84375 L 314.953125 61.84375 C 311.390625 56.816406 307.09375 52.34375 302.21875 48.585938 C 290.878906 39.851562 276.421875 34.972656 260.820312 35.980469 C 229.878906 37.972656 205.070312 63.199219 203.570312 94.167969 C 201.867188 129.375 230.015625 158.558594 264.851562 158.558594 C 278.886719 158.558594 291.820312 153.8125 302.171875 145.859375 C 306.890625 142.226562 311.070312 137.925781 314.566406 133.101562 C 314.941406 132.539062 315.339844 131.992188 315.738281 131.445312 C 318.230469 128.03125 321.101562 124.910156 324.289062 122.148438 C 333.835938 113.871094 348.179688 113.871094 357.730469 122.148438 C 360.917969 124.910156 363.789062 128.03125 366.277344 131.445312 C 366.675781 131.992188 367.074219 132.539062 367.453125 133.101562 C 370.949219 137.925781 375.125 142.226562 379.847656 145.859375 C 390.195312 153.8125 403.132812 158.558594 417.164062 158.558594 C 431.765625 158.558594 445.183594 153.421875 455.726562 144.878906 L 455.726562 137.289062 C 445.714844 146.925781 432.125 152.867188 417.164062 152.867188 C 398.6875 152.867188 382.296875 143.8125 372.167969 129.914062 C 371.789062 129.359375 371.394531 128.816406 371 128.273438 C 367.503906 123.445312 363.324219 119.140625 358.601562 115.507812 C 358.546875 115.46875 358.496094 115.429688 358.441406 115.390625 C 348.195312 107.5625 333.824219 107.5625 323.574219 115.390625 C 323.523438 115.429688 323.46875 115.46875 323.417969 115.507812 C 318.691406 119.140625 314.515625 123.445312 311.019531 128.273438 C 310.625 128.816406 310.226562 129.359375 309.851562 129.914062 C 299.40625 144.242188 282.308594 153.421875 263.132812 152.84375 C 233.582031 151.945312 209.625 127.59375 209.195312 98.03125 C 208.742188 66.957031 233.882812 41.539062 264.851562 41.539062 C 283.761719 41.539062 300.492188 51.023438 310.554688 65.480469 L 310.589844 65.4375 C 310.585938 65.4375 310.585938 65.4375 310.585938 65.4375 C 314.15625 70.492188 318.472656 74.984375 323.371094 78.757812 C 323.421875 78.796875 323.476562 78.839844 323.527344 78.878906 C 333.800781 86.738281 348.21875 86.738281 358.488281 78.878906 C 358.542969 78.839844 358.59375 78.796875 358.648438 78.757812 C 363.546875 74.984375 367.859375 70.492188 371.429688 65.4375 Z M 371.460938 65.480469 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 223.523438 209.460938 C 224.421875 209.460938 225.164062 209.15625 225.753906 208.542969 C 226.34375 207.933594 226.636719 207.167969 226.636719 206.253906 C 226.636719 205.324219 226.34375 204.554688 225.753906 203.949219 C 225.164062 203.347656 224.421875 203.042969 223.523438 203.042969 L 219.777344 203.042969 L 219.777344 209.460938 Z M 223.523438 201.019531 C 225.023438 201.019531 226.277344 201.519531 227.277344 202.519531 C 228.277344 203.519531 228.777344 204.765625 228.777344 206.253906 C 228.777344 207.726562 228.277344 208.96875 227.277344 209.976562 C 226.277344 210.980469 225.023438 211.484375 223.523438 211.484375 L 219.777344 211.484375 L 219.777344 217.300781 L 217.613281 217.300781 L 217.613281 201.019531 Z M 223.523438 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 242.800781 215.253906 L 249.828125 215.253906 L 249.828125 217.300781 L 240.640625 217.300781 L 240.640625 201.019531 L 242.800781 201.019531 Z M 242.800781 215.253906 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 264.566406 211.625 L 270.414062 211.625 L 267.492188 203.589844 Z M 272.480469 217.300781 L 271.152344 213.648438 L 263.832031 213.648438 L 262.5 217.300781 L 260.199219 217.300781 L 266.269531 201.019531 L 268.710938 201.019531 L 274.78125 217.300781 Z M 272.480469 217.300781 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 290.832031 217.601562 C 289.3125 217.601562 288.011719 217.246094 286.933594 216.53125 C 285.855469 215.820312 285.101562 214.84375 284.667969 213.601562 L 286.527344 212.53125 C 287.164062 214.503906 288.613281 215.488281 290.878906 215.488281 C 291.992188 215.488281 292.847656 215.257812 293.433594 214.800781 C 294.023438 214.34375 294.320312 213.734375 294.320312 212.976562 C 294.320312 212.199219 294.023438 211.617188 293.433594 211.230469 C 292.847656 210.84375 291.863281 210.429688 290.480469 209.996094 C 289.804688 209.765625 289.289062 209.585938 288.929688 209.460938 C 288.566406 209.339844 288.121094 209.140625 287.585938 208.871094 C 287.050781 208.597656 286.652344 208.320312 286.386719 208.03125 C 286.125 207.746094 285.890625 207.367188 285.679688 206.90625 C 285.46875 206.4375 285.363281 205.910156 285.363281 205.324219 C 285.363281 203.910156 285.859375 202.789062 286.851562 201.960938 C 287.84375 201.132812 289.054688 200.71875 290.480469 200.71875 C 291.769531 200.71875 292.890625 201.042969 293.84375 201.695312 C 294.796875 202.347656 295.511719 203.207031 295.996094 204.277344 L 294.179688 205.324219 C 293.480469 203.648438 292.25 202.8125 290.480469 202.8125 C 289.597656 202.8125 288.882812 203.027344 288.34375 203.460938 C 287.800781 203.894531 287.527344 204.484375 287.527344 205.226562 C 287.527344 205.941406 287.78125 206.484375 288.296875 206.855469 C 288.808594 207.226562 289.691406 207.613281 290.949219 208.019531 C 291.390625 208.171875 291.703125 208.285156 291.894531 208.351562 C 292.085938 208.421875 292.378906 208.523438 292.773438 208.664062 C 293.171875 208.804688 293.460938 208.921875 293.648438 209.015625 C 293.832031 209.105469 294.085938 209.238281 294.402344 209.410156 C 294.71875 209.582031 294.957031 209.742188 295.109375 209.898438 C 295.265625 210.054688 295.449219 210.246094 295.65625 210.472656 C 295.867188 210.695312 296.015625 210.925781 296.109375 211.15625 C 296.203125 211.390625 296.285156 211.660156 296.355469 211.960938 C 296.425781 212.265625 296.460938 212.585938 296.460938 212.929688 C 296.460938 214.355469 295.941406 215.492188 294.902344 216.335938 C 293.863281 217.179688 292.503906 217.601562 290.832031 217.601562 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 318.160156 201.019531 L 318.160156 203.066406 L 313.34375 203.066406 L 313.34375 217.300781 L 311.203125 217.300781 L 311.203125 203.066406 L 306.414062 203.066406 L 306.414062 201.019531 Z M 318.160156 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 329.601562 201.019531 L 331.765625 201.019531 L 331.765625 217.300781 L 329.601562 217.300781 Z M 329.601562 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 352.207031 217.601562 C 349.742188 217.601562 347.707031 216.789062 346.101562 215.160156 C 344.5 213.53125 343.695312 211.53125 343.695312 209.160156 C 343.695312 206.789062 344.5 204.789062 346.101562 203.160156 C 347.707031 201.53125 349.742188 200.71875 352.207031 200.71875 C 353.699219 200.71875 355.066406 201.074219 356.316406 201.785156 C 357.5625 202.5 358.535156 203.460938 359.234375 204.671875 L 357.347656 205.765625 C 356.882812 204.867188 356.191406 204.148438 355.265625 203.613281 C 354.34375 203.078125 353.324219 202.8125 352.207031 202.8125 C 350.332031 202.8125 348.800781 203.414062 347.613281 204.625 C 346.429688 205.835938 345.835938 207.347656 345.835938 209.160156 C 345.835938 210.960938 346.429688 212.464844 347.613281 213.671875 C 348.800781 214.882812 350.332031 215.488281 352.207031 215.488281 C 353.324219 215.488281 354.34375 215.21875 355.265625 214.683594 C 356.191406 214.148438 356.882812 213.441406 357.347656 212.554688 L 359.234375 213.625 C 358.550781 214.835938 357.582031 215.800781 356.324219 216.523438 C 355.070312 217.242188 353.699219 217.601562 352.207031 217.601562 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 391.421875 217.601562 C 389.902344 217.601562 388.605469 217.246094 387.527344 216.53125 C 386.449219 215.820312 385.691406 214.84375 385.257812 213.601562 L 387.117188 212.53125 C 387.753906 214.503906 389.203125 215.488281 391.46875 215.488281 C 392.585938 215.488281 393.4375 215.257812 394.027344 214.800781 C 394.617188 214.34375 394.910156 213.734375 394.910156 212.976562 C 394.910156 212.199219 394.617188 211.617188 394.027344 211.230469 C 393.4375 210.84375 392.453125 210.429688 391.074219 209.996094 C 390.398438 209.765625 389.878906 209.585938 389.519531 209.460938 C 389.160156 209.339844 388.714844 209.140625 388.179688 208.871094 C 387.644531 208.597656 387.242188 208.320312 386.980469 208.03125 C 386.714844 207.746094 386.480469 207.367188 386.269531 206.90625 C 386.0625 206.4375 385.957031 205.910156 385.957031 205.324219 C 385.957031 203.910156 386.453125 202.789062 387.445312 201.960938 C 388.4375 201.132812 389.648438 200.71875 391.074219 200.71875 C 392.359375 200.71875 393.480469 201.042969 394.433594 201.695312 C 395.390625 202.347656 396.105469 203.207031 396.585938 204.277344 L 394.773438 205.324219 C 394.074219 203.648438 392.839844 202.8125 391.074219 202.8125 C 390.191406 202.8125 389.476562 203.027344 388.933594 203.460938 C 388.390625 203.894531 388.121094 204.484375 388.121094 205.226562 C 388.121094 205.941406 388.375 206.484375 388.886719 206.855469 C 389.398438 207.226562 390.28125 207.613281 391.539062 208.019531 C 391.980469 208.171875 392.296875 208.285156 392.484375 208.351562 C 392.675781 208.421875 392.96875 208.523438 393.367188 208.664062 C 393.761719 208.804688 394.054688 208.921875 394.238281 209.015625 C 394.425781 209.105469 394.675781 209.238281 394.992188 209.410156 C 395.3125 209.582031 395.550781 209.742188 395.703125 209.898438 C 395.859375 210.054688 396.039062 210.246094 396.25 210.472656 C 396.457031 210.695312 396.609375 210.925781 396.703125 211.15625 C 396.792969 211.390625 396.875 211.660156 396.945312 211.960938 C 397.015625 212.265625 397.050781 212.585938 397.050781 212.929688 C 397.050781 214.355469 396.53125 215.492188 395.492188 216.335938 C 394.453125 217.179688 393.097656 217.601562 391.421875 217.601562 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 419.214844 216.035156 C 418.085938 217.078125 416.621094 217.601562 414.820312 217.601562 C 413.019531 217.601562 411.550781 217.078125 410.414062 216.035156 C 409.273438 214.984375 408.703125 213.585938 408.703125 211.835938 L 408.703125 201.019531 L 410.867188 201.019531 L 410.867188 211.742188 C 410.867188 212.890625 411.207031 213.800781 411.890625 214.476562 C 412.570312 215.148438 413.546875 215.488281 414.820312 215.488281 C 416.089844 215.488281 417.066406 215.148438 417.75 214.476562 C 418.433594 213.800781 418.773438 212.890625 418.773438 211.742188 L 418.773438 201.019531 L 420.914062 201.019531 L 420.914062 211.835938 C 420.914062 213.585938 420.347656 214.984375 419.214844 216.035156 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 435.683594 203.042969 L 435.683594 209.113281 L 440.03125 209.113281 C 440.839844 209.113281 441.523438 208.816406 442.089844 208.21875 C 442.65625 207.621094 442.941406 206.90625 442.941406 206.066406 C 442.941406 205.230469 442.65625 204.515625 442.089844 203.925781 C 441.523438 203.339844 440.839844 203.042969 440.03125 203.042969 Z M 443.171875 217.300781 L 439.523438 211.066406 L 435.683594 211.066406 L 435.683594 217.300781 L 433.519531 217.300781 L 433.519531 201.019531 L 440.03125 201.019531 C 441.425781 201.019531 442.621094 201.511719 443.613281 202.496094 C 444.605469 203.480469 445.101562 204.671875 445.101562 206.066406 C 445.101562 207.121094 444.789062 208.082031 444.160156 208.953125 C 443.53125 209.820312 442.722656 210.429688 441.730469 210.789062 L 445.566406 217.300781 Z M 443.171875 217.300781 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 472.664062 209.230469 L 472.664062 210.207031 C 472.664062 212.332031 471.933594 214.09375 470.476562 215.5 C 469.019531 216.902344 467.089844 217.601562 464.6875 217.601562 C 462.203125 217.601562 460.15625 216.785156 458.535156 215.148438 C 456.914062 213.511719 456.101562 211.515625 456.101562 209.160156 C 456.101562 206.804688 456.914062 204.808594 458.535156 203.171875 C 460.15625 201.535156 462.191406 200.71875 464.636719 200.71875 C 466.144531 200.71875 467.523438 201.078125 468.78125 201.800781 C 470.035156 202.519531 471.003906 203.46875 471.6875 204.648438 L 469.824219 205.742188 C 469.359375 204.855469 468.660156 204.148438 467.722656 203.613281 C 466.78125 203.078125 465.746094 202.808594 464.617188 202.808594 C 462.753906 202.808594 461.226562 203.417969 460.035156 204.636719 C 458.839844 205.855469 458.242188 207.363281 458.242188 209.160156 C 458.242188 210.960938 458.84375 212.464844 460.046875 213.671875 C 461.246094 214.882812 462.800781 215.488281 464.710938 215.488281 C 466.335938 215.488281 467.65625 215.085938 468.664062 214.289062 C 469.671875 213.492188 470.28125 212.457031 470.5 211.183594 L 464.523438 211.183594 L 464.523438 209.230469 Z M 472.664062 209.230469 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 486.757812 215.253906 L 494.316406 215.253906 L 494.316406 217.300781 L 484.59375 217.300781 L 484.59375 201.019531 L 494.199219 201.019531 L 494.199219 203.066406 L 486.757812 203.066406 L 486.757812 208.066406 L 493.617188 208.066406 L 493.617188 210.089844 L 486.757812 210.089844 Z M 486.757812 215.253906 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 508.386719 203.042969 L 508.386719 209.113281 L 512.738281 209.113281 C 513.542969 209.113281 514.230469 208.816406 514.796875 208.21875 C 515.359375 207.621094 515.644531 206.90625 515.644531 206.066406 C 515.644531 205.230469 515.359375 204.515625 514.796875 203.925781 C 514.230469 203.339844 513.542969 203.042969 512.738281 203.042969 Z M 515.875 217.300781 L 512.230469 211.066406 L 508.386719 211.066406 L 508.386719 217.300781 L 506.226562 217.300781 L 506.226562 201.019531 L 512.738281 201.019531 C 514.132812 201.019531 515.328125 201.511719 516.320312 202.496094 C 517.3125 203.480469 517.808594 204.671875 517.808594 206.066406 C 517.808594 207.121094 517.492188 208.082031 516.867188 208.953125 C 516.238281 209.820312 515.425781 210.429688 514.433594 210.789062 L 518.273438 217.300781 Z M 515.875 217.300781 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 541.390625 201.019531 L 535.625 210.71875 L 535.625 217.300781 L 533.460938 217.300781 L 533.460938 210.695312 L 527.714844 201.019531 L 530.132812 201.019531 L 534.5625 208.660156 L 538.972656 201.019531 Z M 541.390625 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 623.839844 210.996094 C 623.335938 211.507812 622.71875 211.765625 621.992188 211.765625 C 621.261719 211.765625 620.640625 211.507812 620.132812 210.996094 C 619.617188 210.484375 619.363281 209.867188 619.363281 209.136719 C 619.363281 208.40625 619.617188 207.792969 620.132812 207.289062 C 620.640625 206.785156 621.261719 206.53125 621.992188 206.53125 C 622.71875 206.53125 623.335938 206.785156 623.839844 207.289062 C 624.34375 207.792969 624.597656 208.40625 624.597656 209.136719 C 624.597656 209.867188 624.34375 210.484375 623.839844 210.996094 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 658.203125 215.253906 C 659.863281 215.253906 661.21875 214.671875 662.273438 213.511719 C 663.328125 212.347656 663.855469 210.898438 663.855469 209.160156 C 663.855469 207.425781 663.328125 205.972656 662.273438 204.8125 C 661.21875 203.648438 659.863281 203.066406 658.203125 203.066406 L 654.015625 203.066406 L 654.015625 215.253906 Z M 658.203125 201.019531 C 660.421875 201.019531 662.261719 201.808594 663.726562 203.382812 C 665.191406 204.957031 665.925781 206.882812 665.925781 209.160156 C 665.925781 211.441406 665.191406 213.367188 663.726562 214.941406 C 662.261719 216.515625 660.421875 217.300781 658.203125 217.300781 L 651.855469 217.300781 L 651.855469 201.019531 Z M 658.203125 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 680.019531 203.042969 L 680.019531 209.113281 L 684.371094 209.113281 C 685.175781 209.113281 685.859375 208.816406 686.425781 208.21875 C 686.992188 207.621094 687.277344 206.90625 687.277344 206.066406 C 687.277344 205.230469 686.992188 204.515625 686.425781 203.925781 C 685.859375 203.339844 685.175781 203.042969 684.371094 203.042969 Z M 687.507812 217.300781 L 683.863281 211.066406 L 680.019531 211.066406 L 680.019531 217.300781 L 677.855469 217.300781 L 677.855469 201.019531 L 684.371094 201.019531 C 685.765625 201.019531 686.960938 201.511719 687.953125 202.496094 C 688.941406 203.480469 689.441406 204.671875 689.441406 206.066406 C 689.441406 207.121094 689.125 208.082031 688.496094 208.953125 C 687.871094 209.820312 687.058594 210.429688 686.066406 210.789062 L 689.90625 217.300781 Z M 687.507812 217.300781 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 702.695312 217.554688 C 702.277344 217.554688 701.921875 217.410156 701.625 217.113281 C 701.332031 216.820312 701.183594 216.464844 701.183594 216.042969 C 701.183594 215.625 701.332031 215.269531 701.625 214.972656 C 701.921875 214.679688 702.277344 214.535156 702.695312 214.535156 C 703.128906 214.535156 703.492188 214.679688 703.777344 214.972656 C 704.0625 215.269531 704.207031 215.625 704.207031 216.042969 C 704.207031 216.464844 704.0625 216.820312 703.777344 217.113281 C 703.492188 217.410156 703.128906 217.554688 702.695312 217.554688 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 731.09375 209.230469 L 731.09375 210.207031 C 731.09375 212.332031 730.367188 214.09375 728.910156 215.5 C 727.449219 216.902344 725.519531 217.601562 723.117188 217.601562 C 720.636719 217.601562 718.585938 216.785156 716.964844 215.148438 C 715.34375 213.511719 714.535156 211.515625 714.535156 209.160156 C 714.535156 206.804688 715.34375 204.808594 716.964844 203.171875 C 718.585938 201.535156 720.621094 200.71875 723.070312 200.71875 C 724.574219 200.71875 725.957031 201.078125 727.210938 201.800781 C 728.46875 202.519531 729.433594 203.46875 730.117188 204.648438 L 728.257812 205.742188 C 727.792969 204.855469 727.089844 204.148438 726.152344 203.613281 C 725.214844 203.078125 724.179688 202.808594 723.046875 202.808594 C 721.1875 202.808594 719.660156 203.417969 718.464844 204.636719 C 717.273438 205.855469 716.675781 207.363281 716.675781 209.160156 C 716.675781 210.960938 717.277344 212.464844 718.476562 213.671875 C 719.679688 214.882812 721.234375 215.488281 723.140625 215.488281 C 724.769531 215.488281 726.085938 215.085938 727.09375 214.289062 C 728.101562 213.492188 728.714844 212.457031 728.933594 211.183594 L 722.953125 211.183594 L 722.953125 209.230469 Z M 731.09375 209.230469 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 743.027344 201.019531 L 745.1875 201.019531 L 745.1875 217.300781 L 743.027344 217.300781 Z M 743.027344 201.019531 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 761.0625 213.660156 C 762.265625 214.878906 763.757812 215.488281 765.539062 215.488281 C 767.324219 215.488281 768.816406 214.878906 770.015625 213.660156 C 771.21875 212.445312 771.820312 210.945312 771.820312 209.160156 C 771.820312 207.363281 771.21875 205.855469 770.015625 204.636719 C 768.816406 203.417969 767.324219 202.8125 765.539062 202.8125 C 763.757812 202.8125 762.265625 203.417969 761.0625 204.636719 C 759.859375 205.855469 759.261719 207.363281 759.261719 209.160156 C 759.261719 210.945312 759.859375 212.445312 761.0625 213.660156 M 771.527344 215.136719 C 769.894531 216.78125 767.894531 217.601562 765.539062 217.601562 C 763.183594 217.601562 761.191406 216.78125 759.5625 215.136719 C 757.933594 213.496094 757.121094 211.5 757.121094 209.160156 C 757.121094 206.804688 757.933594 204.808594 759.5625 203.171875 C 761.191406 201.535156 763.183594 200.71875 765.539062 200.71875 C 767.894531 200.71875 769.894531 201.535156 771.527344 203.171875 C 773.164062 204.808594 773.984375 206.804688 773.984375 209.160156 C 773.984375 211.5 773.164062 213.496094 771.527344 215.136719 "/>
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 571.054688 208.953125 L 571.054688 216.832031 C 572.003906 217.078125 573.234375 217.199219 574.742188 217.199219 C 576.273438 217.199219 577.558594 216.84375 578.601562 216.136719 C 579.660156 215.425781 580.195312 214.429688 580.195312 213.144531 C 580.195312 212.34375 580 211.648438 579.605469 211.0625 C 579.214844 210.476562 578.699219 210.023438 578.054688 209.707031 C 577.414062 209.390625 576.746094 209.164062 576.058594 209.023438 C 575.367188 208.882812 574.660156 208.8125 573.933594 208.8125 C 572.609375 208.8125 571.652344 208.859375 571.054688 208.953125 M 571.054688 200.539062 L 571.054688 207.945312 C 571.652344 208.078125 572.851562 208.144531 574.660156 208.144531 C 576.167969 208.144531 577.351562 207.792969 578.210938 207.09375 C 579.066406 206.394531 579.496094 205.46875 579.496094 204.3125 C 579.496094 203.027344 579 202.027344 578.015625 201.308594 C 577.027344 200.589844 575.683594 200.234375 573.988281 200.234375 C 572.816406 200.234375 571.839844 200.335938 571.054688 200.539062 M 569.320312 214.570312 L 569.320312 202.441406 C 569.320312 201.339844 569.144531 200.644531 568.792969 200.34375 C 568.457031 200.027344 567.757812 199.859375 566.695312 199.839844 L 566.695312 199.476562 L 574.828125 199.476562 C 577.007812 199.476562 578.695312 199.910156 579.886719 200.777344 C 581.078125 201.644531 581.675781 202.839844 581.675781 204.371094 C 581.675781 205.339844 581.351562 206.191406 580.710938 206.925781 C 580.066406 207.664062 579.234375 208.179688 578.210938 208.476562 L 578.210938 208.535156 C 579.34375 208.699219 580.351562 209.175781 581.226562 209.957031 C 582.085938 210.742188 582.515625 211.703125 582.515625 212.835938 C 582.515625 214.402344 581.914062 215.652344 580.710938 216.582031 C 579.511719 217.515625 577.855469 217.980469 575.75 217.980469 L 566.695312 217.980469 L 566.695312 217.617188 C 567.851562 217.578125 568.578125 217.394531 568.875 217.058594 C 569.171875 216.703125 569.320312 215.875 569.320312 214.570312 "/>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="rgb(15%, 21%, 30%)" fill-opacity="1" d="M 594.644531 219.378906 L 595.480469 217.335938 L 590.8125 207.386719 C 590.554688 206.828125 590.292969 206.445312 590.03125 206.242188 C 589.769531 206.035156 589.371094 205.90625 588.832031 205.851562 L 588.832031 205.488281 L 594.113281 205.488281 L 594.113281 205.851562 C 593.515625 205.851562 593.105469 205.921875 592.882812 206.058594 C 592.65625 206.199219 592.546875 206.4375 592.546875 206.773438 C 592.546875 206.960938 592.761719 207.554688 593.191406 208.5625 L 596.320312 215.183594 L 599.253906 208.03125 C 599.496094 207.492188 599.617188 207.015625 599.617188 206.605469 C 599.617188 206.140625 599.207031 205.886719 598.386719 205.851562 L 598.386719 205.488281 L 602.105469 205.488281 L 602.105469 205.851562 C 601.359375 205.851562 600.78125 206.335938 600.375 207.304688 L 594.867188 220.636719 C 594.402344 221.753906 593.84375 222.59375 593.191406 223.164062 C 592.539062 223.734375 591.886719 224.015625 591.234375 224.015625 C 590.730469 224.015625 590.335938 223.910156 590.046875 223.695312 C 589.757812 223.480469 589.613281 223.195312 589.613281 222.84375 C 589.613281 222.527344 589.722656 222.265625 589.949219 222.058594 C 590.171875 221.855469 590.449219 221.753906 590.785156 221.753906 C 590.972656 221.753906 591.277344 221.828125 591.707031 221.976562 C 592.136719 222.125 592.398438 222.199219 592.492188 222.199219 C 592.882812 222.199219 593.222656 222 593.511719 221.597656 C 593.800781 221.199219 594.175781 220.457031 594.644531 219.378906 "/>
+</g>
+</svg>
+  </a>
+  <a class="nwa" href="https://wa.me/573025437767?text=Quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita" target="_blank">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+    Agendar valoración
+  </a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hvid">
+    <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="hero-clinica.mp4"></video> -->
+    <div class="hfallback">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+    </div>
+  </div>
+  <div class="hov-top"></div><div class="hov-left"></div>
+  <div class="scanline"></div>
+  <div class="lbx lbx-t"></div><div class="lbx lbx-b"></div>
+  <div class="hcontent">
+    
+    <div class="hey">Barranquilla, Colombia</div>
+    <h1 class="hh1">
+      <span class="stroke">Depilación</span>
+      <span class="fill">láser que</span>
+      <span class="accent">sí funciona.</span>
+    </h1>
+    <p class="hsub">En un mercado lleno de promesas vacías, nosotros tenemos algo diferente: <strong>resultados reales, tecnología de primer nivel y un médico que supervisa cada sesión.</strong></p>
+    <div class="hctas">
+      <a class="cwa" href="https://wa.me/573025437767?text=Hola!%20Quiero%20mi%20valoraci%C3%B3n%20gratuita%20de%20depilaci%C3%B3n%20l%C3%A1ser%20%F0%9F%8C%9F" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Quiero mi valoración gratis
+      </a>
+      <a class="csec" href="#resultados">Ver resultados reales →</a>
+    </div>
+  </div>
+  <div class="hproof">
+    <div><div class="pnum">500+</div><div class="plbl">Pacientes tratadas</div></div>
+    <div class="pdiv"></div>
+    <div><div class="pnum">95%</div><div class="plbl">Reducción promedio</div></div>
+    <div class="pdiv"></div>
+    <div><div class="pnum">1ª</div><div class="plbl">Sesión · resultados visibles</div></div>
+    <div class="pdiv"></div>
+    <div><div class="pnum">0</div><div class="plbl">Dolor intolerable</div></div>
+  </div>
+  <div class="scr"><span>Scroll</span><div class="scrl"></div></div>
+</section>
+
+<!-- LA VERDAD QUE VENDE -->
+<section id="verdad">
+  <div class="v-inner">
+    <div class="v-left reveal">
+      <div class="slbl">Por qué somos diferentes</div>
+      <h2>El mercado promete.<br><em>Nosotros entregamos.</em></h2>
+      <p>La gente paga, espera… y no ve resultados. Eso no pasa en 440 Clinic. Aquí tienes tecnología real, honestidad real y un médico de tu lado en cada sesión.</p>
+    </div>
+    <div class="v-cards reveal">
+      <div class="vcard">
+        <div class="vcard-num">01</div>
+        <div>
+          <div class="vcard-title">El equipo SÍ funciona</div>
+          <p class="vcard-text">Usamos REMOVALL TRIO de Tentrek Lasers — tecnología de alta gama que destruye el folículo desde la primera sesión. No es promesa. Es resultado visible desde el día uno.</p>
+          <span class="vcard-tag">Resultados desde sesión 1</span>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">02</div>
+        <div>
+          <div class="vcard-title">Un médico orienta tu tratamiento</div>
+          <p class="vcard-text">No es solo una máquina. El Dr. Gio y la Dra. Sharon supervisan cada protocolo. Tu piel está en manos de especialistas, no de esteticistas improvisadas.</p>
+          <span class="vcard-tag">Supervisión médica real</span>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">03</div>
+        <div>
+          <div class="vcard-title">Duele mucho menos — y es tolerable</div>
+          <p class="vcard-text">No te vamos a mentir: hay algo de molestia. Pero con Ice Cooling -9°C integrado, el proceso es mucho más cómodo que cualquier otro equipo en Barranquilla.</p>
+          <span class="vcard-tag">Ice Cooling -9°C</span>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="vcard-num">04</div>
+        <div>
+          <div class="vcard-title">Honestidad que otros no se atreven</div>
+          <p class="vcard-text">¿100% definitivo? Nadie puede garantizarlo. Pero con nuestro equipo y protocolo médico, obtendrás la reducción más alta y duradera disponible en Barranquilla.</p>
+          <span class="vcard-tag">Los mejores resultados del mercado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REMOVALL TRIO -->
+<section id="equipo">
+  <div class="eq-inner">
+    <div class="eq-top">
+      <div class="reveal">
+        <div class="slbl">Nuestra tecnología</div>
+        <h2 class="sh2">REMOVALL<br><em>TRIO</em></h2>
+        <p class="sp">El equipo profesional de alta gama de Tentrek Lasers. En 440 Clinic no usamos equipos genéricos. Elegimos lo mejor porque tu piel lo merece — y porque los resultados lo demuestran.</p>
+      </div>
+      <div class="eq-vid reveal">
+        <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="removall-accion.mp4"></video> -->
+        <div class="eq-vid-fallback"><div class="playbtn"></div></div>
+        <div class="eq-vid-tag">REMOVALL TRIO en acción</div>
+      </div>
+    </div>
+    <div class="specs reveal">
+      <div class="spec"><div class="spec-val">755/810/1064nm</div><div class="spec-lbl">Triple longitud de onda</div></div>
+      <div class="spec"><div class="spec-val">1800W</div><div class="spec-lbl">Potencia máxima</div></div>
+      <div class="spec"><div class="spec-val">-9°C</div><div class="spec-lbl">Ice Cooling integrado</div></div>
+      <div class="spec"><div class="spec-val">FCD</div><div class="spec-lbl">Tecnología de destrucción folicular</div></div>
+    </div>
+    <div class="honest reveal">
+      <div class="honest-icon">💬</div>
+      <div>
+        <div class="honest-title">Lo que otros no te dicen — nosotros sí</div>
+        <p class="honest-text">"La depilación láser no siempre es 100% definitiva para todos — eso es la verdad. Lo que sí es real es que con nuestro equipo <strong>obtendrás la mayor reducción posible</strong>, de forma segura, cómoda y con supervisión médica. Esa honestidad es parte de nuestra diferencia."<br><br>— <strong style="color:var(--terra2)">Dr. Giovanni Fuentes · Cirujano Plástico</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES / DESPUÉS -->
+<section id="resultados">
+  <div class="res-inner">
+    <div class="res-top reveal">
+      <div>
+        <div class="slbl">Resultados reales</div>
+        <h2 class="sh2">Antes &<br><em>Después</em></h2>
+      </div>
+      <p class="sp" style="max-width:360px">Pacientes reales de 440 Clinic. Sin filtros, sin edición. Esto es lo que el REMOVALL TRIO hace por tu piel.</p>
+    </div>
+    <div class="ad-grid">
+      <div class="ad-card reveal r1">
+        <!-- 📸 REEMPLAZA fondos con fotos reales -->
+        <div class="ad-before-half">Antes</div>
+        <div class="ad-after-half">Después</div>
+        <div class="ad-line"></div><div class="ad-dot">↔</div>
+        <div class="ad-foot"><div class="ad-zone">Axilas</div><div class="ad-ses">6 sesiones · visible desde sesión 1</div></div>
+      </div>
+      <div class="ad-card reveal r2">
+        <div class="ad-before-half" style="background:linear-gradient(135deg,#1E2A35,#28393E)">Antes</div>
+        <div class="ad-after-half" style="background:linear-gradient(135deg,#2B4050,#3D6070)">Después</div>
+        <div class="ad-line"></div><div class="ad-dot">↔</div>
+        <div class="ad-foot"><div class="ad-zone">Bikini Brasilero</div><div class="ad-ses">8 sesiones · reducción +90%</div></div>
+      </div>
+      <div class="ad-card reveal r3">
+        <div class="ad-before-half" style="background:linear-gradient(135deg,#1C2B35,#253340)">Antes</div>
+        <div class="ad-after-half" style="background:linear-gradient(135deg,#243A4A,#3A5A6E)">Después</div>
+        <div class="ad-line"></div><div class="ad-dot">↔</div>
+        <div class="ad-foot"><div class="ad-zone">Piernas Completas</div><div class="ad-ses">6 sesiones · piel suave permanente</div></div>
+      </div>
+    </div>
+    <p class="ad-note">* Reemplaza los placeholders con fotos reales de pacientes con consentimiento firmado · Resultados individuales pueden variar</p>
+  </div>
+</section>
+
+<!-- TESTIMONIOS VIDEO -->
+<section id="testimonios">
+  <div class="test-inner">
+    <div class="reveal">
+      <div class="slbl">Ellas ya lo vivieron</div>
+      <h2 class="sh2">Voces <em>reales</em></h2>
+    </div>
+    <div class="tgrid">
+      <div class="tcard reveal r1">
+        <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="testimonio-1.mp4"></video> -->
+        <div class="tcard-bg"></div><div class="tcard-ov"></div><div class="tplay"></div>
+        <div class="tinfo">
+          <div class="tname">María C.</div>
+          <div class="tzona">Axilas + Bikini · 6 sesiones</div>
+          <div class="tstars">★★★★★</div>
+          <div class="tquote">"Después de la primera sesión noté la diferencia. Nunca pensé que iba a funcionar tan bien."</div>
+        </div>
+      </div>
+      <div class="tcard reveal r2">
+        <div class="tcard-bg" style="background:linear-gradient(160deg,#1E2D3A,#2B4050)"></div><div class="tcard-ov"></div><div class="tplay"></div>
+        <div class="tinfo">
+          <div class="tname">Valentina R.</div>
+          <div class="tzona">Cuerpo completo · 8 sesiones</div>
+          <div class="tstars">★★★★★</div>
+          <div class="tquote">"Lo que más me convenció fue la honestidad del Dr. Gio. Aquí no te prometen lo imposible — y por eso confié."</div>
+        </div>
+      </div>
+      <div class="tcard reveal r3">
+        <div class="tcard-bg" style="background:linear-gradient(160deg,#1A2530,#263845)"></div><div class="tcard-ov"></div><div class="tplay"></div>
+        <div class="tinfo">
+          <div class="tname">Daniela M.</div>
+          <div class="tzona">Piernas + Axilas · 6 sesiones</div>
+          <div class="tstars">★★★★★</div>
+          <div class="tquote">"Pensé que iba a doler muchísimo. Fue completamente tolerable. Y los resultados hablan solos."</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO HUMANO -->
+<section id="equipo-humano">
+  <div class="eq-h-inner">
+
+    <!-- DRA. SHARON — PROTAGONISTA -->
+    <div class="sharon-wrap">
+      <div class="sharon-photo reveal">
+        <!-- 📸 REEMPLAZA: <img src="sharon-foto.jpg" alt="Dra. Sharon Santiago"> -->
+        <div class="sharon-photo-inner">
+          <div class="ph-av">SHA</div>
+          <div class="ph-name-ph">DRA. SHARON</div>
+        </div>
+        <div class="sharon-bar">
+          <div class="sharon-bar-name">Dra. Sharon Santiago</div>
+          <div class="sharon-bar-title">Médico Estético · Diseño de Protocolos Láser</div>
+          <span class="sharon-badge">La mente detrás de tu tratamiento</span>
+        </div>
+      </div>
+      <div class="sharon-content reveal">
+        <div class="slbl">Quien diseña tu tratamiento</div>
+        <div class="sharon-quote">
+          "Yo diseño<br>tu protocolo.<br><em>Ellas lo ejecutan."</em>
+        </div>
+        <p class="sharon-p">Antes de tu primera sesión, la Dra. Sharon analiza tu historia clínica, tu fototipo de piel y las zonas a tratar. Con esa información diseña el protocolo exacto: intensidad, número de sesiones, intervalos y cuidados.</p>
+        <p class="sharon-p">Las especialistas ejecutan ese protocolo bajo sus lineamientos. No improvisamos nada — cada sesión sigue un plan médico diseñado específicamente para ti.</p>
+        <div class="sharon-feats">
+          <div class="sharon-feat"><span class="sfmark">✓</span>Diseña el protocolo personalizado por fototipo</div>
+          <div class="sharon-feat"><span class="sfmark">✓</span>Define intensidad, sesiones e intervalos</div>
+          <div class="sharon-feat"><span class="sfmark">✓</span>Entrena y supervisa a las especialistas</div>
+          <div class="sharon-feat"><span class="sfmark">✓</span>Disponible para consultas clínicas en el proceso</div>
+        </div>
+        <a class="cwa" style="display:inline-flex" href="https://wa.me/573025437767?text=Quiero%20informaci%C3%B3n%20sobre%20el%20protocolo%20de%20depilaci%C3%B3n%20l%C3%A1ser%20%F0%9F%8C%9F" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Conocer mi protocolo
+        </a>
+      </div>
+    </div>
+
+    <!-- DIVISOR -->
+    <div class="team-divider reveal">
+      <div class="tdiv-line"></div>
+      <div class="tdiv-text">Las especialistas que ejecutan tu protocolo sesión a sesión</div>
+      <div class="tdiv-line"></div>
+    </div>
+
+    <!-- ESTETICISTAS -->
+    <div class="estet-header reveal">
+      <div class="slbl">Nuestras especialistas</div>
+      <h2 class="sh2">El equipo que<br>te <em>acompaña</em></h2>
+      <p class="sp">Profesionales certificadas, entrenadas en el protocolo REMOVALL TRIO. Son ellas quienes están contigo en cada sesión — con paciencia, técnica y cuidado real.</p>
+    </div>
+    <div class="estet-grid">
+
+      <!-- KATERINE -->
+      <div class="estet-card reveal r1">
+        <!-- 📸 REEMPLAZA: <img src="katerine-foto.jpg" alt="Katerine"> -->
+        <div class="estet-photo">
+          <div class="estet-av">KAT</div>
+          <div class="estet-ph">KATERINE</div>
+        </div>
+        <div class="estet-ov"></div>
+        <div class="estet-hover"></div>
+        <div class="estet-info">
+          <div class="estet-name">Katerine</div>
+          <div class="estet-rol">Especialista en Depilación Láser</div>
+          <div class="estet-desc">La más experimentada del equipo en tratamientos con REMOVALL TRIO. Su manejo del equipo garantiza máxima eficacia y mínima molestia.</div>
+        </div>
+      </div>
+
+      <!-- ESTETICISTA 2 — agrega nombre real -->
+      <div class="estet-card reveal r2">
+        <div class="estet-photo" style="background:linear-gradient(160deg,#1E2D3A,#2A3D50)">
+          <div class="estet-av">EST</div>
+          <div class="estet-ph">NOMBRE</div>
+        </div>
+        <div class="estet-ov"></div>
+        <div class="estet-hover"></div>
+        <div class="estet-info">
+          <div class="estet-name">Nombre real</div>
+          <div class="estet-rol">Especialista en Estética</div>
+          <div class="estet-desc">Reemplaza con el nombre y descripción real de la segunda esteticista del equipo.</div>
+        </div>
+      </div>
+
+      <!-- ESTETICISTA 3 — agrega nombre real -->
+      <div class="estet-card reveal r3">
+        <div class="estet-photo" style="background:linear-gradient(160deg,#1A2A38,#263644)">
+          <div class="estet-av">EST</div>
+          <div class="estet-ph">NOMBRE</div>
+        </div>
+        <div class="estet-ov"></div>
+        <div class="estet-hover"></div>
+        <div class="estet-info">
+          <div class="estet-name">Nombre real</div>
+          <div class="estet-rol">Especialista en Estética</div>
+          <div class="estet-desc">Reemplaza con el nombre y descripción real de la tercera esteticista del equipo.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- DR. GIO — AVAL CIENTÍFICO -->
+    <div class="drgio-aval reveal">
+      <div class="drgio-aval-photo">
+        <!-- 📸 REEMPLAZA: <img src="drgio-foto.jpg" alt="Dr. Gio"> -->
+        <div class="drgio-aval-photo-inner">GIO</div>
+      </div>
+      <div class="drgio-aval-content">
+        <div class="drgio-aval-name">Dr. Giovanni Fuentes</div>
+        <div class="drgio-aval-title">Cirujano Plástico · C.A.M.P.L.A.S.T.I.C.O. · Director Científico 440 Clinic</div>
+        <p class="drgio-aval-text">
+          "Soy el responsable de elegir la tecnología que usamos, los protocolos que aplicamos y los estándares que exigimos. El REMOVALL TRIO no está en 440 Clinic por casualidad — está porque lo evalué, lo comparé con todo lo que hay en el mercado, y decidí que era lo mejor para nuestras pacientes. Cada miembro de este equipo fue formado con esos mismos criterios."
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="ctaf-vid">
+    <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="clinica-ambiente.mp4"></video> -->
+    <div class="ctaf-fallback">
+      <div class="ctaf-blob ctaf-blob1"></div>
+      <div class="ctaf-blob ctaf-blob2"></div>
+    </div>
+  </div>
+  <div class="ctaf-ov"></div>
+  <div class="ctaf-content reveal">
+    <div class="ctaf-eyebrow">440 Clinic · Barranquilla</div>
+    <h2 class="ctaf-h2">¿Lista para<br><em>resultados reales?</em></h2>
+    <p class="ctaf-sub">Agenda tu valoración gratuita hoy. Sin compromiso, sin presión. Solo la verdad sobre tu piel y el tratamiento que más te conviene.</p>
+    <a class="ctaf-cta" href="https://wa.me/573025437767?text=Hola!%20Quiero%20agendar%20mi%20valoraci%C3%B3n%20gratuita%20de%20depilaci%C3%B3n%20l%C3%A1ser%20en%20440%20Clinic%20%F0%9F%8C%9F" target="_blank">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+      Quiero mi valoración GRATIS
+    </a>
+    <p class="ctaf-micro">Respuesta en menos de 10 minutos · Lun–Sáb 8am–6pm</p>
+  </div>
+</section>
+
+<!-- CONTACTO + FAQ -->
+<section id="contacto">
+  <div class="contact-in">
+    <div class="reveal">
+      <div class="slbl">Encuéntranos</div>
+      <h2 class="sh2" style="margin-bottom:0">En <em>Barranquilla</em></h2>
+      <div class="crows">
+        <div class="crow"><span class="cico">📍</span>Carrera 47 #79-191 · Barranquilla, Colombia</div>
+        <div class="crow"><span class="cico">⏰</span>Lun–Vie 8am–6pm · Sáb 8am–1pm</div>
+        <div class="crow"><span class="cico">📸</span>@440clinic · @drgiovannifuentes · @drgio440</div>
+        <div class="crow"><span class="cico">📞</span>+57 318 180 0130</div>
+      </div>
+      <div class="cwa-block">
+        <h4>WhatsApp directo</h4>
+        <p>La forma más rápida. Respuesta garantizada en menos de 10 minutos en horario de atención.</p>
+        <a class="cwa-btn" href="https://wa.me/573025437767?text=Hola!%20Quiero%20mi%20valoraci%C3%B3n%20gratuita%20%F0%9F%8C%9F" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          +57 302 543 7767
+        </a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="faq-title">Preguntas <em>frecuentes</em></div>
+      <div class="faq">
+        <details class="fi">
+          <summary>¿Duele el tratamiento?</summary>
+          <p>Seamos honestos: hay algo de molestia. Pero con Ice Cooling -9°C integrado, el proceso es mucho más cómodo que cualquier otro equipo. La mayoría lo describe como un leve pellizco tolerable.</p>
+        </details>
+        <details class="fi">
+          <summary>¿Cuántas sesiones necesito?</summary>
+          <p>Entre 6 y 8 sesiones en promedio, espaciadas 4-6 semanas. Desde la primera sesión verás reducción visible. En tu valoración gratuita te hacemos un plan personalizado.</p>
+        </details>
+        <details class="fi">
+          <summary>¿Es 100% definitivo?</summary>
+          <p>Esta es la verdad que nadie más te dice: ningún láser garantiza el 100% para todos. Pero con REMOVALL TRIO y protocolo médico, muchas pacientes llegan al 90-95% de reducción y no necesitan ningún otro método.</p>
+        </details>
+        <details class="fi">
+          <summary>¿Es seguro para pieles morenas?</summary>
+          <p>Sí. La triple longitud de onda (755/810/1064nm) lo hace apto para todos los fototipos, incluyendo pieles oscuras que otros láseres no pueden tratar con seguridad. Siempre con supervisión médica.</p>
+        </details>
+        <details class="fi">
+          <summary>¿Qué diferencia a 440 Clinic?</summary>
+          <p>Tres cosas: tecnología REMOVALL TRIO de primer nivel, protocolo médico real — la Dra. Sharon diseña tu tratamiento personalizado y las especialistas lo ejecutan bajo sus lineamientos — y honestidad absoluta. No prometemos lo imposible, pero sí los mejores resultados posibles en Barranquilla.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    
+    <div class="ftag">La perfecta armonía de tu cuerpo · #LaBelleza440</div>
+  </div>
+  <p>© 2025 440 Clinic S.A.S. · Barranquilla, Colombia</p>
+  <div class="flinks">
+    <a href="#">Privacidad</a>
+    <a href="#">Términos</a>
+    <a href="https://instagram.com/440clinic" target="_blank">Instagram</a>
+  </div>
+</footer>
+
+<script>
+// Countdown
+function tick(){
+  const now=new Date(),end=new Date();
+  end.setHours(23,59,59,0);
+  const d=end-now;
+  const h=String(Math.floor(d/3600000)).padStart(2,'0');
+  const m=String(Math.floor((d%3600000)/60000)).padStart(2,'0');
+  const s=String(Math.floor((d%60000)/1000)).padStart(2,'0');
+  const el=document.getElementById('cd');
+  if(el)el.textContent=`${h}:${m}:${s}`;
+}
+tick();setInterval(tick,1000);
+
+// Scroll reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Nav compact
+window.addEventListener('scroll',()=>{
+  document.querySelector('nav').style.padding=
+    window.scrollY>80?'.6rem 3rem':'1.2rem 3rem';
+});
+</script>
+</body>
+</html>
