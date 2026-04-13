@@ -19,14 +19,10 @@ body{font-family:'DM Sans',sans-serif;background:#DDE6ED;color:var(--azul);overf
 .wa-float svg{width:22px;height:22px;fill:#fff;flex-shrink:0}
 @keyframes wap{0%,100%{box-shadow:0 8px 32px rgba(37,211,102,.45)}50%{box-shadow:0 8px 52px rgba(37,211,102,.75)}}
 
-/* URGENCY BAR */
-.ubar{position:fixed;top:0;left:0;right:0;z-index:7000;background:var(--rosa);padding:.45rem 1rem;display:flex;align-items:center;justify-content:center;gap:.8rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;flex-wrap:wrap}
-.ubar .dot{width:6px;height:6px;border-radius:50%;background:#fff;animation:bl 1.2s infinite;flex-shrink:0}
-@keyframes bl{0%,100%{opacity:1}50%{opacity:.2}}
-#cd{font-weight:700;letter-spacing:.14em}
+
 
 /* NAV */
-nav{position:fixed;top:2rem;left:0;right:0;z-index:6000;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;transition:padding .3s;background:rgba(221,230,237,.96);backdrop-filter:blur(16px);border-bottom:1px solid #C8DBE6;box-shadow:0 2px 20px rgba(38,54,77,.08)}
+nav{position:fixed;top:0;left:0;right:0;z-index:6000;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 3rem;transition:padding .3s;background:rgba(221,230,237,.96);backdrop-filter:blur(16px);border-bottom:1px solid #C8DBE6;box-shadow:0 2px 20px rgba(38,54,77,.08)}
 .nlogo{display:inline-flex;align-items:center;text-decoration:none;transition:opacity .2s}
 .nlogo:hover{opacity:.8}
 .nlogo svg{height:68px;width:auto;min-width:260px}
@@ -311,10 +307,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   .cwa{justify-content:center;padding:1rem 1.5rem;font-size:.85rem}
   .csec{text-align:center}
   /* Stats: 2 columnas en mobile */
-  .hproof{
-    left:1.4rem;right:1.4rem;bottom:1.5rem;
-    display:grid;grid-template-columns:1fr 1fr;gap:.8rem
-  }
+  .hproof{display:none}
   .pdiv{display:none}
   .pnum{font-size:1.8rem}
   .plbl{font-size:.6rem}
@@ -398,13 +391,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   Escríbenos ya
 </a>
 
-<!-- URGENCY BAR -->
-<div class="ubar">
-  <div class="dot"></div>
-  <span>Cupos limitados · Valoración gratuita disponible esta semana · Quedan</span>
-  <strong id="cd">--:--:--</strong>
-  <div class="dot"></div>
-</div>
+<!-- urgency bar removida -->
 
 <!-- NAV -->
 <nav>
@@ -485,6 +472,11 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
       <span class="accent">sí funciona.</span>
     </h1>
     <p class="hsub">En un mercado lleno de promesas vacías, nosotros tenemos algo diferente: <strong>resultados reales, tecnología de primer nivel y un médico que supervisa cada sesión.</strong></p>
+    <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin:-1rem 0 2rem">
+      <span style="background:rgba(255,255,255,.12);color:#fff;font-size:.78rem;font-weight:400;padding:.4rem .9rem;border-radius:30px">❌ Piel irritada por cuchillas</span>
+      <span style="background:rgba(255,255,255,.12);color:#fff;font-size:.78rem;font-weight:400;padding:.4rem .9rem;border-radius:30px">❌ Áreas oscuras</span>
+      <span style="background:rgba(255,255,255,.12);color:#fff;font-size:.78rem;font-weight:400;padding:.4rem .9rem;border-radius:30px">❌ Foliculitis</span>
+    </div>
     <div class="hctas">
       <a class="cwa" href="https://wa.me/573025437767?text=Hola!%20Quiero%20mi%20valoraci%C3%B3n%20gratuita%20de%20depilaci%C3%B3n%20l%C3%A1ser%20%F0%9F%8C%9F" target="_blank">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
@@ -525,8 +517,8 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
       <div class="vcard">
         <div class="vcard-num">02</div>
         <div>
-          <div class="vcard-title">Un médico orienta tu tratamiento</div>
-          <p class="vcard-text">No es solo una máquina. El Dr. Gio y la Dra. Sharon supervisan cada protocolo. Tu piel está en manos de especialistas, no de esteticistas improvisadas.</p>
+          <div class="vcard-title">La Dra. Sharon supervisa tu tratamiento</div>
+          <p class="vcard-text">La Dra. Sharon diseña tu protocolo personalizado y supervisa a las especialistas que lo ejecutan. Tu piel siempre está en manos expertas.</p>
           <span class="vcard-tag">Supervisión médica real</span>
         </div>
       </div>
@@ -538,14 +530,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
           <span class="vcard-tag">Ice Cooling -9°C</span>
         </div>
       </div>
-      <div class="vcard">
-        <div class="vcard-num">04</div>
-        <div>
-          <div class="vcard-title">Honestidad que otros no se atreven</div>
-          <p class="vcard-text">¿100% definitivo? Nadie puede garantizarlo. Pero con nuestro equipo y protocolo médico, obtendrás la reducción más alta y duradera disponible en Barranquilla.</p>
-          <span class="vcard-tag">Los mejores resultados del mercado</span>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -560,8 +545,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
         <p class="sp">El equipo profesional de alta gama de Tentrek Lasers. En 440 Clinic no usamos equipos genéricos. Elegimos lo mejor porque tu piel lo merece — y porque los resultados lo demuestran.</p>
       </div>
       <div class="eq-vid reveal">
-        <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="removall-accion.mp4"></video> -->
-        <div class="eq-vid-fallback"><div class="playbtn"></div></div>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u_qHqi8T-yk" title="REMOVALL TRIO en acción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
         <div class="eq-vid-tag">REMOVALL TRIO en acción</div>
       </div>
     </div>
@@ -574,8 +558,8 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     <div class="honest reveal">
       <div class="honest-icon">💬</div>
       <div>
-        <div class="honest-title">Lo que otros no te dicen — nosotros sí</div>
-        <p class="honest-text">"La depilación láser no siempre es 100% definitiva para todos — eso es la verdad. Lo que sí es real es que con nuestro equipo <strong>obtendrás la mayor reducción posible</strong>, de forma segura, cómoda y con supervisión médica. Esa honestidad es parte de nuestra diferencia."<br><br>— <strong style="color:var(--terra2)">Dr. Giovanni Fuentes · Cirujano Plástico</strong></p>
+        <div class="honest-title">¿Es permanente?</div>
+        <p class="honest-text">Casi. La mayoría de pacientes llega al 90-95% de reducción y solo necesita un retoque ocasional. Eso es lo mejor que existe hoy en Barranquilla.</p>
       </div>
     </div>
   </div>
@@ -861,18 +845,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
 </footer>
 
 <script>
-// Countdown
-function tick(){
-  const now=new Date(),end=new Date();
-  end.setHours(23,59,59,0);
-  const d=end-now;
-  const h=String(Math.floor(d/3600000)).padStart(2,'0');
-  const m=String(Math.floor((d%3600000)/60000)).padStart(2,'0');
-  const s=String(Math.floor((d%60000)/1000)).padStart(2,'0');
-  const el=document.getElementById('cd');
-  if(el)el.textContent=`${h}:${m}:${s}`;
-}
-tick();setInterval(tick,1000);
+
 
 // Scroll reveal
 const obs=new IntersectionObserver(entries=>{
