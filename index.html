@@ -108,9 +108,8 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 #equipo{padding:7rem 3rem;background:linear-gradient(to bottom,#C8DBE6 0%,#DDE6ED 100%);position:relative;overflow:hidden}
 .eq-inner{max-width:1100px;margin:0 auto}
 .eq-top{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-bottom:4rem;align-items:end}
-.eq-vid{position:relative;aspect-ratio:16/9;background:var(--fondo2);border:1px solid rgba(38,54,77,.12);overflow:hidden;cursor:pointer}
-.eq-vid video{width:100%;height:100%;object-fit:cover}
-.eq-vid-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#1A2B3E,#26364D);display:flex;align-items:center;justify-content:center}
+.eq-vid{position:relative;aspect-ratio:16/9;background:var(--fondo2);border:1px solid rgba(38,54,77,.12);overflow:hidden}
+.eq-vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .playbtn{width:68px;height:68px;border-radius:50%;background:rgba(162,123,90,.9);display:flex;align-items:center;justify-content:center;transition:transform .2s,background .2s}
 .playbtn::after{content:'';border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:5px}
 .eq-vid:hover .playbtn{transform:scale(1.1);background:var(--terra)}
@@ -130,34 +129,14 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 
 /* ANTES/DESPUÉS */
 #resultados{padding:7rem 3rem;background:#EAF0F4}
-.res-inner{max-width:1100px;margin:0 auto}
-.res-top{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem}
-.ad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.ad-card{position:relative;overflow:hidden;aspect-ratio:3/4;background:#7A9BB5;cursor:pointer}
-.ad-before-half{position:absolute;inset:0;right:50%;background:linear-gradient(135deg,#EDD5D1 0%,#D4B8B3 100%);display:flex;align-items:flex-end;padding:1rem;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);transition:right .4s ease}
-.ad-after-half{position:absolute;inset:0;left:50%;background:linear-gradient(135deg,#26364D 0%,#536E83 100%);display:flex;align-items:flex-end;justify-content:flex-end;padding:1rem;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:left .4s ease}
-.ad-card:hover .ad-before-half{right:30%}
-.ad-card:hover .ad-after-half{left:70%}
-.ad-line{position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(255,255,255,.5);transform:translateX(-50%);z-index:2;transition:left .4s ease}
-.ad-dot{position:absolute;top:50%;left:50%;z-index:3;transform:translate(-50%,-50%);width:32px;height:32px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--azul);font-weight:700;box-shadow:0 2px 12px rgba(0,0,0,.4);transition:left .4s ease}
-.ad-card:hover .ad-line{left:70%}
-.ad-card:hover .ad-dot{left:70%}
-.ad-foot{position:absolute;bottom:0;left:0;right:0;z-index:4;background:linear-gradient(to top,rgba(221,230,237,.98),transparent);padding:2rem 1.2rem 1.2rem}
-.ad-zone{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:-.01em;color:var(--azul);font-weight:700}
-.ad-ses{font-size:.65rem;letter-spacing:.14em;color:var(--azul2);text-transform:uppercase;margin-top:.2rem}
-.ad-note{margin-top:1.5rem;font-size:.7rem;font-style:italic;color:rgba(255,255,255,.18);text-align:center}
 
 /* TESTIMONIOS */
 #testimonios{padding:7rem 3rem;background:#C8DBE6}
 .test-inner{max-width:1100px;margin:0 auto}
 .tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:3rem}
-.tcard{position:relative;overflow:hidden;aspect-ratio:9/14;background:var(--azul);cursor:pointer}
-.tcard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.tcard-bg{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E 0%,#26364D 100%)}
-.tcard-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,14,.95) 0%,rgba(7,9,14,.15) 55%,transparent 100%)}
-.tplay{position:absolute;top:50%;left:50%;z-index:2;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;border:2px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s,transform .2s}
-.tplay::after{content:'';border-left:17px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px}
-.tcard:hover .tplay{background:var(--terra);border-color:var(--terra);transform:translate(-50%,-50%) scale(1.1)}
+.tcard{position:relative;overflow:hidden;aspect-ratio:9/16;background:var(--azul)}
+.tcard iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.tcard-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,14,.85) 0%,transparent 55%);pointer-events:none;z-index:1}
 .tinfo{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:1.5rem 1.2rem}
 .tname{font-family:'Playfair Display',serif;font-size:1.3rem;letter-spacing:-.01em;font-weight:700}
 .tzona{font-size:.65rem;letter-spacing:.14em;color:rgba(255,255,255,.35);text-transform:uppercase;margin-top:.2rem}
@@ -332,18 +311,9 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   /* Honest badge — más compacto */
   .honest{flex-direction:column;gap:1rem;padding:1.5rem}
 
-  /* RESULTADOS — solo 2 cards en mobile */
-  #resultados{padding:4rem 1.4rem}
-  .res-top{flex-direction:column;gap:1rem}
-  .ad-grid{grid-template-columns:1fr;gap:1px}
-  /* Ocultar 3er card en mobile */
-  .ad-grid .ad-card:nth-child(3){display:none}
-
-  /* TESTIMONIOS — 1 columna, solo 2 */
+  /* TESTIMONIOS — 1 columna en mobile */
   #testimonios{padding:4rem 1.4rem}
-  .tgrid{grid-template-columns:1fr;gap:1px}
-  .tcard{aspect-ratio:9/10}
-  .tcard:nth-child(3){display:none}
+  .tgrid{grid-template-columns:1fr;gap:1rem;max-width:320px;margin-left:auto;margin-right:auto}
 
   /* EQUIPO HUMANO */
   #equipo-humano{padding:4rem 1.4rem}
@@ -376,8 +346,6 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
 
 /* Tablet 600-900 */
 @media(min-width:600px) and (max-width:900px){
-  .ad-grid{grid-template-columns:1fr 1fr}
-  .ad-grid .ad-card:nth-child(3){display:block}
   .estet-grid{grid-template-columns:repeat(3,1fr)}
   .estet-card:nth-child(3){display:block}
   .specs{display:grid;grid-template-columns:repeat(2,1fr)}
@@ -549,8 +517,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
         <p class="sp">El equipo profesional de alta gama de Tentrek Lasers. En 440 Clinic no usamos equipos genéricos. Elegimos lo mejor porque tu piel lo merece — y porque los resultados lo demuestran.</p>
       </div>
       <div class="eq-vid reveal">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/u_qHqi8T-yk" title="REMOVALL TRIO en acción" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
-        <div class="eq-vid-tag">REMOVALL TRIO en acción</div>
+        <iframe src="https://www.youtube.com/embed/_9JcZgSNc8M?rel=0" title="Dra. Sharon presenta el REMOVALL TRIO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
     <div class="specs reveal">
@@ -569,40 +536,6 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   </div>
 </section>
 
-<!-- ANTES / DESPUÉS -->
-<section id="resultados">
-  <div class="res-inner">
-    <div class="res-top reveal">
-      <div>
-        <div class="slbl">Resultados reales</div>
-        <h2 class="sh2">Antes &<br><em>Después</em></h2>
-      </div>
-      <p class="sp" style="max-width:360px">Pacientes reales de 440 Clinic. Sin filtros, sin edición. Esto es lo que el REMOVALL TRIO hace por tu piel.</p>
-    </div>
-    <div class="ad-grid">
-      <div class="ad-card reveal r1">
-        <!-- 📸 REEMPLAZA fondos con fotos reales -->
-        <div class="ad-before-half">Antes</div>
-        <div class="ad-after-half">Después</div>
-        <div class="ad-line"></div><div class="ad-dot">↔</div>
-        <div class="ad-foot"><div class="ad-zone">Axilas</div><div class="ad-ses">6 sesiones · visible desde sesión 1</div></div>
-      </div>
-      <div class="ad-card reveal r2">
-        <div class="ad-before-half" style="background:linear-gradient(135deg,#1E2A35,#28393E)">Antes</div>
-        <div class="ad-after-half" style="background:linear-gradient(135deg,#2B4050,#3D6070)">Después</div>
-        <div class="ad-line"></div><div class="ad-dot">↔</div>
-        <div class="ad-foot"><div class="ad-zone">Bikini Brasilero</div><div class="ad-ses">8 sesiones · reducción +90%</div></div>
-      </div>
-      <div class="ad-card reveal r3">
-        <div class="ad-before-half" style="background:linear-gradient(135deg,#1C2B35,#253340)">Antes</div>
-        <div class="ad-after-half" style="background:linear-gradient(135deg,#243A4A,#3A5A6E)">Después</div>
-        <div class="ad-line"></div><div class="ad-dot">↔</div>
-        <div class="ad-foot"><div class="ad-zone">Piernas Completas</div><div class="ad-ses">6 sesiones · piel suave permanente</div></div>
-      </div>
-    </div>
-    <p class="ad-note">* Reemplaza los placeholders con fotos reales de pacientes con consentimiento firmado · Resultados individuales pueden variar</p>
-  </div>
-</section>
 
 <!-- TESTIMONIOS VIDEO -->
 <section id="testimonios">
@@ -613,32 +546,16 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     </div>
     <div class="tgrid">
       <div class="tcard reveal r1">
-        <!-- 🎬 REEMPLAZA: <video autoplay muted loop playsinline src="testimonio-1.mp4"></video> -->
-        <div class="tcard-bg"></div><div class="tcard-ov"></div><div class="tplay"></div>
-        <div class="tinfo">
-          <div class="tname">María C.</div>
-          <div class="tzona">Axilas + Bikini · 6 sesiones</div>
-          <div class="tstars">★★★★★</div>
-          <div class="tquote">"Después de la primera sesión noté la diferencia. Nunca pensé que iba a funcionar tan bien."</div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/soh3SMuenA4?rel=0" title="Testimonio depilación láser 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <div class="tcard-ov"></div>
       </div>
       <div class="tcard reveal r2">
-        <div class="tcard-bg" style="background:linear-gradient(160deg,#1E2D3A,#2B4050)"></div><div class="tcard-ov"></div><div class="tplay"></div>
-        <div class="tinfo">
-          <div class="tname">Valentina R.</div>
-          <div class="tzona">Cuerpo completo · 8 sesiones</div>
-          <div class="tstars">★★★★★</div>
-          <div class="tquote">"Lo que más me convenció fue la honestidad del Dr. Gio. Aquí no te prometen lo imposible — y por eso confié."</div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/DgZu9KgEWuo?rel=0" title="Testimonio depilación láser 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <div class="tcard-ov"></div>
       </div>
       <div class="tcard reveal r3">
-        <div class="tcard-bg" style="background:linear-gradient(160deg,#1A2530,#263845)"></div><div class="tcard-ov"></div><div class="tplay"></div>
-        <div class="tinfo">
-          <div class="tname">Daniela M.</div>
-          <div class="tzona">Piernas + Axilas · 6 sesiones</div>
-          <div class="tstars">★★★★★</div>
-          <div class="tquote">"Pensé que iba a doler muchísimo. Fue completamente tolerable. Y los resultados hablan solos."</div>
-        </div>
+        <iframe src="https://www.youtube.com/embed/W_h2k8dsh0Y?rel=0" title="Testimonio depilación láser 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <div class="tcard-ov"></div>
       </div>
     </div>
   </div>
