@@ -175,7 +175,7 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 
 /* Esteticistas grid */
 .estet-header{margin-bottom:2.5rem}
-.estet-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:3rem}
+.estet-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-bottom:3rem;max-width:800px;margin-left:auto;margin-right:auto}
 .estet-card{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--azul);cursor:default}
 .estet-photo{position:absolute;inset:0;background:linear-gradient(160deg,#1A2B3E,#26364D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem}
 .estet-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
@@ -322,8 +322,6 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   .sharon-photo{aspect-ratio:4/3}
   .sharon-quote{font-size:1.8rem}
   .estet-grid{grid-template-columns:1fr 1fr;gap:1px}
-  /* Solo 2 esteticistas visibles en mobile */
-  .estet-card:nth-child(3){display:none}
   .estet-card{aspect-ratio:3/4}
   .drgio-aval{grid-template-columns:1fr;text-align:center;gap:1.5rem;padding:1.5rem}
   .drgio-aval-photo{margin:0 auto}
@@ -346,8 +344,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
 
 /* Tablet 600-900 */
 @media(min-width:600px) and (max-width:900px){
-  .estet-grid{grid-template-columns:repeat(3,1fr)}
-  .estet-card:nth-child(3){display:block}
+  .estet-grid{grid-template-columns:repeat(2,1fr)}
   .specs{display:grid;grid-template-columns:repeat(2,1fr)}
   .hproof{display:flex;gap:1.5rem}
   .pdiv{display:block}
@@ -568,11 +565,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     <!-- DRA. SHARON — PROTAGONISTA -->
     <div class="sharon-wrap">
       <div class="sharon-photo reveal">
-        <!-- 📸 REEMPLAZA: <img src="sharon-foto.jpg" alt="Dra. Sharon Santiago"> -->
-        <div class="sharon-photo-inner">
-          <div class="ph-av">SHA</div>
-          <div class="ph-name-ph">DRA. SHARON</div>
-        </div>
+        <img src="sharon.jpg" alt="Dra. Sharon Santiago" style="width:100%;height:100%;object-fit:cover">
         <div class="sharon-bar">
           <div class="sharon-bar-name">Dra. Sharon Santiago</div>
           <div class="sharon-bar-title">Médico Estético · Diseño de Protocolos Láser</div>
@@ -614,49 +607,27 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     </div>
     <div class="estet-grid">
 
-      <!-- KATERINE -->
+      <!-- KATHERINE -->
       <div class="estet-card reveal r1">
-        <!-- 📸 REEMPLAZA: <img src="katerine-foto.jpg" alt="Katerine"> -->
-        <div class="estet-photo">
-          <div class="estet-av">KAT</div>
-          <div class="estet-ph">KATERINE</div>
-        </div>
+        <img src="katherine.jpg" alt="Katherine" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
         <div class="estet-ov"></div>
         <div class="estet-hover"></div>
         <div class="estet-info">
-          <div class="estet-name">Katerine</div>
+          <div class="estet-name">Katherine</div>
           <div class="estet-rol">Especialista en Depilación Láser</div>
           <div class="estet-desc">La más experimentada del equipo en tratamientos con REMOVALL TRIO. Su manejo del equipo garantiza máxima eficacia y mínima molestia.</div>
         </div>
       </div>
 
-      <!-- ESTETICISTA 2 — agrega nombre real -->
+      <!-- ROXANA -->
       <div class="estet-card reveal r2">
-        <div class="estet-photo" style="background:linear-gradient(160deg,#1E2D3A,#2A3D50)">
-          <div class="estet-av">EST</div>
-          <div class="estet-ph">NOMBRE</div>
-        </div>
+        <img src="roxana.jpg" alt="Roxana" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
         <div class="estet-ov"></div>
         <div class="estet-hover"></div>
         <div class="estet-info">
-          <div class="estet-name">Nombre real</div>
-          <div class="estet-rol">Especialista en Estética</div>
-          <div class="estet-desc">Reemplaza con el nombre y descripción real de la segunda esteticista del equipo.</div>
-        </div>
-      </div>
-
-      <!-- ESTETICISTA 3 — agrega nombre real -->
-      <div class="estet-card reveal r3">
-        <div class="estet-photo" style="background:linear-gradient(160deg,#1A2A38,#263644)">
-          <div class="estet-av">EST</div>
-          <div class="estet-ph">NOMBRE</div>
-        </div>
-        <div class="estet-ov"></div>
-        <div class="estet-hover"></div>
-        <div class="estet-info">
-          <div class="estet-name">Nombre real</div>
-          <div class="estet-rol">Especialista en Estética</div>
-          <div class="estet-desc">Reemplaza con el nombre y descripción real de la tercera esteticista del equipo.</div>
+          <div class="estet-name">Roxana</div>
+          <div class="estet-rol">Especialista en Depilación Láser</div>
+          <div class="estet-desc">Dedicada y atenta en cada sesión. Su cuidado con las pacientes y dominio del protocolo REMOVALL TRIO aseguran una experiencia cómoda y segura.</div>
         </div>
       </div>
 
@@ -665,8 +636,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     <!-- DR. GIO — AVAL CIENTÍFICO -->
     <div class="drgio-aval reveal">
       <div class="drgio-aval-photo">
-        <!-- 📸 REEMPLAZA: <img src="drgio-foto.jpg" alt="Dr. Gio"> -->
-        <div class="drgio-aval-photo-inner">GIO</div>
+        <img src="drgio.jpg" alt="Dr. Giovanni Fuentes" style="width:100%;height:100%;object-fit:cover;border-radius:50%">
       </div>
       <div class="drgio-aval-content">
         <div class="drgio-aval-name">Dr. Giovanni Fuentes</div>
