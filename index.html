@@ -202,10 +202,18 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 /* responsive equipo */
 @media(max-width:900px){
   #equipo-humano{padding:5rem 1.5rem}
-  .sharon-wrap{grid-template-columns:1fr;gap:3rem}
-  .estet-grid{grid-template-columns:1fr}
-  .drgio-aval{grid-template-columns:1fr;text-align:center}
-  .drgio-aval-photo{margin:0 auto}
+  .sharon-wrap{grid-template-columns:1fr;gap:2rem}
+  .sharon-photo{aspect-ratio:4/5}
+  .sharon-bar{padding:1.5rem 1rem 1rem;background:linear-gradient(to top,rgba(13,24,37,.95) 50%,transparent)}
+  .sharon-bar-name{font-size:1.3rem}
+  .sharon-bar-title{font-size:.55rem}
+  .estet-grid{grid-template-columns:1fr 1fr;gap:2px}
+  .estet-card{aspect-ratio:2/3}
+  .estet-info{padding:1rem .8rem}
+  .estet-name{font-size:1rem}
+  .estet-desc{display:none}
+  .drgio-aval{grid-template-columns:1fr;text-align:center;gap:1.5rem;padding:1.5rem}
+  .drgio-aval-photo{margin:0 auto;width:140px;height:140px}
 }
 
 /* mantener estilos previos necesarios */
@@ -636,7 +644,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     <!-- DR. GIO — AVAL CIENTÍFICO -->
     <div class="drgio-aval reveal">
       <div class="drgio-aval-photo">
-        <img src="drgio.jpg" alt="Dr. Giovanni Fuentes" style="width:100%;height:100%;object-fit:cover;border-radius:50%">
+        <img src="drgio.jpg" alt="Dr. Giovanni Fuentes" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;border-radius:50%">
       </div>
       <div class="drgio-aval-content">
         <div class="drgio-aval-name">Dr. Giovanni Fuentes</div>
