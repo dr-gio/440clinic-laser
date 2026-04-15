@@ -244,7 +244,10 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 .ctaf-micro{margin-top:1.2rem;font-size:.72rem;color:rgba(255,255,255,.6);letter-spacing:.06em}
 
 /* CONTACTO */
-#contacto{padding:5rem 3rem;background:#EAF0F4;border-top:1px solid #C8DBE6}
+.recepcion-banner{position:relative;width:100%;height:280px;overflow:hidden}
+.recepcion-banner img{width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.recepcion-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,#EAF0F4 100%)}
+#contacto{padding:5rem 3rem;background:#EAF0F4}
 .contact-in{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
 .crows{display:flex;flex-direction:column;gap:1.2rem;margin-top:2rem}
 .crow{display:flex;align-items:flex-start;gap:1rem;font-size:.88rem;font-weight:300;color:var(--azul2)}
@@ -342,6 +345,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
   .ctaf-eyebrow{font-size:.6rem}
 
   /* CONTACTO — columna única */
+  .recepcion-banner{height:180px}
   #contacto{padding:4rem 1.4rem}
   .contact-in{grid-template-columns:1fr;gap:3rem}
 
@@ -674,6 +678,11 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
     <p class="ctaf-micro">Respuesta en menos de 10 minutos · Lun–Sáb 8am–6pm</p>
   </div>
 </section>
+
+<!-- RECEPCIÓN BANNER -->
+<div class="recepcion-banner">
+  <img src="recepcion.jpg" alt="Recepción 440 Clinic Barranquilla" loading="lazy">
+</div>
 
 <!-- CONTACTO + FAQ -->
 <section id="contacto">
