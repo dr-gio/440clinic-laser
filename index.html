@@ -482,7 +482,7 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
         <p class="sp">El equipo profesional de alta gama de Tentrek Lasers. En 440 Clinic no usamos equipos genéricos. Elegimos lo mejor porque tu piel lo merece — y porque los resultados lo demuestran.</p>
       </div>
       <div class="eq-vid reveal">
-        <iframe src="https://www.youtube.com/embed/_9JcZgSNc8M?rel=0" title="Dra. Sharon presenta el REMOVALL TRIO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+        <iframe id="sharon-vid" data-src="https://www.youtube.com/embed/_9JcZgSNc8M?rel=0&autoplay=1&mute=1&enablejsapi=1" title="Dra. Sharon presenta el REMOVALL TRIO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <div class="specs reveal">
@@ -762,6 +762,19 @@ window.addEventListener('scroll',()=>{
   nav.classList.toggle('scrolled',scrolled);
   nav.style.padding=scrolled?'.6rem 3rem':'1.2rem 3rem';
 });
+
+// Autoplay video de Sharon al hacer scroll
+const vidFrame=document.getElementById('sharon-vid');
+if(vidFrame){
+  const vidObs=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting && !vidFrame.src){
+        vidFrame.src=vidFrame.dataset.src;
+      }
+    });
+  },{threshold:.3});
+  vidObs.observe(vidFrame);
+}
 </script>
 </body>
 </html>
