@@ -76,7 +76,7 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 .hsub strong{color:#fff;font-weight:600}
 .hctas{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;opacity:0;animation:fu .8s ease 1s forwards}
 
-.cwa{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:1.1rem 2.4rem;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 32px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.cwa{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:1.1rem 2.4rem;font-size:.9rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 32px rgba(37,211,102,.4);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;border-radius:50px}
 .cwa::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
 .cwa:hover::before{left:100%}
 .cwa:hover{transform:translateY(-2px);box-shadow:0 12px 44px rgba(37,211,102,.6)}
@@ -265,7 +265,7 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 .ctaf-h2{font-family:'Playfair Display',serif;font-size:clamp(3rem,6vw,6rem);line-height:1.05;text-transform:none;letter-spacing:-.02em;margin-bottom:1.5rem;color:#fff;font-weight:700}
 .ctaf-h2 em{color:var(--rosa2);font-style:italic;display:block;font-weight:600}
 .ctaf-sub{font-size:1rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 3rem}
-.ctaf-cta{display:inline-flex;align-items:center;gap:.8rem;background:var(--wa);color:#fff;padding:1.3rem 3rem;font-size:1rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 40px rgba(37,211,102,.5);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.ctaf-cta{display:inline-flex;align-items:center;gap:.8rem;background:var(--wa);color:#fff;padding:1.3rem 3rem;font-size:1rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 40px rgba(37,211,102,.5);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden;border-radius:50px}
 .ctaf-cta::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);transition:left .5s}
 .ctaf-cta:hover::before{left:100%}
 .ctaf-cta:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(37,211,102,.65)}
@@ -281,7 +281,7 @@ nav:not(.scrolled) .nlogo svg{filter:brightness(0) invert(1)}
 .cwa-block{margin-top:2.5rem;background:rgba(255,255,255,.7);border:1px solid rgba(37,211,102,.25);border-left:3px solid var(--wa);padding:2rem}
 .cwa-block h4{font-family:'Playfair Display',serif;font-size:1.6rem;letter-spacing:-.01em;margin-bottom:.5rem;color:var(--azul);font-weight:700}
 .cwa-block p{font-size:.82rem;font-weight:300;line-height:1.8;color:var(--azul2);margin-bottom:1.5rem}
-.cwa-btn{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:.9rem 2rem;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:opacity .2s}
+.cwa-btn{display:inline-flex;align-items:center;gap:.7rem;background:var(--wa);color:#fff;padding:.9rem 2rem;font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:opacity .2s;border-radius:50px}
 .cwa-btn:hover{opacity:.85}
 .cwa-btn svg{width:18px;height:18px;fill:#fff}
 .faq{display:flex;flex-direction:column;gap:2px}
@@ -524,6 +524,12 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
       <div class="slbl">Por qué somos diferentes</div>
       <h2>El mercado promete.<br><em>Nosotros entregamos.</em></h2>
       <p>La gente paga, espera… y no ve resultados. Eso no pasa en 440 Clinic. Aquí tienes tecnología real, honestidad real y un médico de tu lado en cada sesión.</p>
+      <div style="margin-top:2rem">
+        <a class="cwa" href="https://wa.me/573181800130?text=Quiero%20mi%20valoración%20gratuita%20🌟" target="_blank">
+          <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:#fff;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          Quiero mi valoración gratuita
+        </a>
+      </div>
     </div>
     <div class="v-cards reveal">
       <div class="vcard">
@@ -574,6 +580,12 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
       <div class="spec"><div class="spec-val">1800W</div><div class="spec-lbl">Potencia máxima</div></div>
       <div class="spec"><div class="spec-val">-9°C</div><div class="spec-lbl">Ice Cooling integrado</div></div>
       <div class="spec"><div class="spec-val">FCD</div><div class="spec-lbl">Tecnología de destrucción folicular</div></div>
+    </div>
+    <div style="margin:2rem 0" class="reveal">
+      <a class="cwa" href="https://wa.me/573181800130?text=Quiero%20información%20sobre%20el%20REMOVALL%20TRIO%20🌟" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Quiero mi valoración gratuita
+      </a>
     </div>
     <div class="honest reveal">
       <div class="honest-icon">💬</div>
@@ -656,6 +668,12 @@ footer p{font-size:.68rem;color:rgba(255,255,255,.55);font-weight:300}
           <div class="tquote">"Pensé que iba a doler muchísimo. Fue completamente tolerable. Y los resultados hablan solos."</div>
         </div>
       </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem" class="reveal">
+      <a class="cwa" href="https://wa.me/573181800130?text=Quiero%20mi%20valoración%20gratuita%20🌟" target="_blank" style="display:inline-flex">
+        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:#fff;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.553 4.116 1.522 5.849L.057 23.571a.75.75 0 00.918.919l5.741-1.473A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.718 9.718 0 01-4.964-1.362l-.356-.212-3.685.945.982-3.597-.232-.37A9.718 9.718 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+        Quiero mi valoración gratuita
+      </a>
     </div>
   </div>
 </section>
